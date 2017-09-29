@@ -1,0 +1,66 @@
+{
+  "name": "commonwealth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "npm run build",
+
+    "start": "cross-env DEBUG=commonwealth:* node ./dist/server.js",
+    "dev": "cross-env DEBUG=commonwealth:* nodemon --debug ./src/server.js",
+    "dev-win": "cross-env DEBUG=commonwealth:* nodemon --debug ./src/server.js --exec babel-node",
+    "build": "babel src --out-dir dist",
+    "build-win": "./node_modules/.bin/babel src --out-dir dist --source-maps",
+    "lint-check": "eslint ./src/ ./tests/",
+    "lint-fix": "eslint --fix ./src/ ./tests/",
+    "commitizen": "git cz",
+    "test": "npm run test-unit && npm run test-integration",
+    "test-unit": "jest ./__tests__/unit/",
+    "test-integration": "jest ./__tests__/integration/",
+    "test-watch": "jest --watch",
+    "precommit": "npm run lint-check"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.17.1",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "git-last-commit": "^0.3.0",
+    "helmet": "^3.8.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.12",
+    "morgan": "~1.8.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^21.0.2",
+    "commitizen": "^2.9.6",
+    "cross-env": "^5.0.5",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^4.7.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "jest": "^21.1.0",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.test.js?(x)"
+    ],
+    "testEnvironment": "node"
+  },
+  "nodemonConfig": {
+    "ignore": ["__test__/*"],
+    "delay": "2500"
+  }
+}
