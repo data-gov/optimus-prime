@@ -12,7 +12,7 @@ getLastCommit((err, commit) => {
     console.error(err)
     lastCommit = {}
   } else {
-    const { shortHash, subject } = commit
+    const {shortHash, subject} = commit
     lastCommit = { hash: shortHash, message: subject }
   }
 })

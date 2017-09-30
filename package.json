@@ -1,23 +1,23 @@
 {
-  "name": "commonwealth",
+  "name": "optimus-prime",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "prestart": "npm run build",
-
-    "start": "cross-env DEBUG=commonwealth:* node ./dist/server.js",
-    "dev": "cross-env DEBUG=commonwealth:* nodemon --debug ./src/server.js",
-    "dev-win": "cross-env DEBUG=commonwealth:* nodemon --debug ./src/server.js --exec babel-node",
+    "start": "cross-env DEBUG=optimus-prime:* node ./dist/server.js",
+    "dev": "cross-env DEBUG=optimus-prime:* nodemon --inspect  ./src/server.js --exec babel-node",
+    "dev:win": "cross-env DEBUG=optimus-prime:* nodemon --debug ./src/server.js --exec babel-node",
     "build": "babel src --out-dir dist",
-    "build-win": "./node_modules/.bin/babel src --out-dir dist --source-maps",
-    "lint-check": "eslint ./src/ ./tests/",
-    "lint-fix": "eslint --fix ./src/ ./tests/",
+    "build:win": "./node_modules/.bin/babel src --out-dir dist --source-maps",
+    "lint:check": "eslint ./src/ ./tests/",
+    "lint:fix": "eslint --fix ./src/ ./tests/",
     "commitizen": "git cz",
-    "test": "npm run test-unit && npm run test-integration",
-    "test-unit": "jest ./__tests__/unit/",
-    "test-integration": "jest ./__tests__/integration/",
-    "test-watch": "jest --watch",
-    "precommit": "npm run lint-check"
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "jest ./test/unit/",
+    "test:integration": "jest ./test/integration/",
+    "test:watch": "jest --watch ",
+    "test:coverage": "jest --coverage",
+    "precommit": "npm run lint:check"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -36,8 +36,8 @@
     "morgan": "~1.8.1"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.0",
-    "babel-jest": "^21.0.2",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
     "commitizen": "^2.9.6",
     "cross-env": "^5.0.5",
     "cz-conventional-changelog": "^2.0.0",
@@ -55,12 +55,14 @@
   },
   "jest": {
     "testMatch": [
-      "**/__tests__/**/*.test.js?(x)"
+      "**/test/**/*.test.js?(x)"
     ],
     "testEnvironment": "node"
   },
   "nodemonConfig": {
-    "ignore": ["__test__/*"],
+    "ignore": [
+      "test/*"
+    ],
     "delay": "2500"
   }
 }

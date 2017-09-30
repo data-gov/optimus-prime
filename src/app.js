@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import helmet from 'helmet'
 
 import { initConfigurations } from './config'
-import { router } from './router'
+import { router } from './routes'
 
 initConfigurations()
 const app = express()
