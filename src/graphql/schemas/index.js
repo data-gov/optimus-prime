@@ -8,6 +8,10 @@ const typeDefs = `
     description: String!
   }
 
+  type Mutation {
+    createLink(url: String!, description: String!): Link
+  }
+  
   type Query {
     allLinks: [Link!]!
   }
