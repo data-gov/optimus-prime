@@ -36,6 +36,7 @@
     "graphql-tools": "^2.5.1",
     "helmet": "^3.8.1",
     "moment": "^2.18.1",
+    "mongodb": "^2.2.33",
     "mongoose": "^4.11.12",
     "morgan": "~1.8.1",
     "subscriptions-transport-ws": "^0.9.1"

@@ -1,11 +1,10 @@
 import { Router } from 'express'
-import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
-
-import schema from '../../graphql/schemas'
+import { graphiqlExpress } from 'apollo-server-express'
 
 const router = Router()
 
-router.use('/graphql', graphqlExpress({schema}))
-router.use('/graphiql', graphiqlExpress({endpointURL: '/graphql'}))
+const graphiqlConfig = { endpointURL: '/graphql' }
+
+router.use('/graphiql', graphiqlExpress(graphiqlConfig))
 
 export default router
