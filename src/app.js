@@ -2,23 +2,16 @@ import express from 'express'
 import logger from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
-import { graphqlExpress } from 'apollo-server-express'
 
-import schema from './graphql/schemas'
-
-import { initConfigurations, mongoConnection } from './config'
-
+import { getGraphqlConfig, readDotEnvFile } from './config'
 import { router } from './routes'
 
 export const initializeApp = async () => {
+  await readDotEnvFile()
+  const graphqlConfig = await getGraphqlConfig()
   const app = express()
-  await initConfigurations()
-  const mongo = await mongoConnection()
-  const graphqlConfig = {
-    context: { mongo },
-    schema
-  }
-  app.use('/graphql', bodyParser.json(), graphqlExpress(graphqlConfig))
+
+  app.use('/graphql', bodyParser.json(), graphqlConfig)
 
   app.disable('x-powered-by')
   app.use(logger('dev'))
