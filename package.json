@@ -15,7 +15,7 @@
     "test:integration": "jest ./test/integration/",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:update-coverage": "jest --coverage",
+    "test:update-coverage": "jest --coverage --forceExit",
     "precommit": "npm run lint:check",
     "prepush": "npm test"
   },
