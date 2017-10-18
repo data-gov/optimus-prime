@@ -1,0 +1,22 @@
+language: javascript
+services: mongodb
+branches:
+  only:
+  - master
+cache:
+  yarn: true
+  directories:
+  - node_modules
+before_install:
+  - nvm install && nvm use
+install:
+  - npm install
+script:
+  - npm run prepush
+  - npm run precommit
+after_success:
+  - npm run test:update-coverage
+env:
+  global:
+  - MONGO_URL='mongodb://127.0.0.1:27017'
+  
