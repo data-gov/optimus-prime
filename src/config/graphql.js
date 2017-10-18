@@ -6,6 +6,7 @@ export const getGraphqlConfig = async () => {
   const mongo = await mongoConnection()
   const graphqlConfig = {
     context: { mongo },
+    debug: true,
     schema
   }
 
