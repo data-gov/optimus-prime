@@ -1,4 +1,5 @@
 language: javascript
+services: mongodb
 branches:
   only:
   - master
@@ -17,4 +18,4 @@ after_success:
   - npm run test:update-coverage
 env:
   global:
-  - MONGO_URL='mongodb://optimus:prime@autobots'
+  - MONGO_URL='mongodb://127.0.0.1:27017'
