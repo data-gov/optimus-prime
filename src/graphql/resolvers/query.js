@@ -1,8 +1,10 @@
 export const Query = {
-  allLinks: async (root, data, {mongo: {Links}}) => {
+  allLinks: async (obj, args, context) => {
+    const { Links } = context.mongo
     return Links.find({}).toArray()
   },
-  allExpenses: async (root, data, {mongo: {Expenses}}) => {
+  allExpenses: async (obj, args, context) => {
+    const { Expenses } = context.mongo
     return Expenses.find({}).toArray()
   }
 }
