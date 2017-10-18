@@ -2,7 +2,7 @@
 
 import http from 'http'
 import { initializeApp } from './app'
-const debug = require('debug')('commonwealth:server')
+const debug = require('debug')('optimus-prime:server')
 
 const start = async () => {
   /**
