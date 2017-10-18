@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
 
-export async function initConfigurations () {
+export async function readDotEnvFile () {
   dotenv.config()
 }

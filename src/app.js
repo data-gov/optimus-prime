@@ -3,18 +3,23 @@ import logger from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
 
-import { initConfigurations } from './config'
+import { readDotEnvFile } from './config/dotEnv'
+import { getGraphqlConfig } from './config/graphql'
 import { router } from './routes'
 
-initConfigurations()
-const app = express()
+export const initializeApp = async () => {
+  await readDotEnvFile()
+  const graphqlConfig = await getGraphqlConfig()
+  const app = express()
 
-app.disable('x-powered-by')
-app.use(logger('dev'))
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(helmet())
+  app.use('/graphql', bodyParser.json(), graphqlConfig)
 
-app.use(router)
+  app.disable('x-powered-by')
+  app.use(logger('dev'))
+  app.use(bodyParser.json())
+  app.use(bodyParser.urlencoded({ extended: false }))
+  app.use(helmet())
 
-export default app
+  app.use(router)
+  return app
+}
