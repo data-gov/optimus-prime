@@ -4,6 +4,7 @@ import { receipt } from './receipt'
 import { provider } from './provider'
 import { congressman } from './congressman'
 import { office } from './office'
+import { congressmanStatus } from './congressmanStatus'
 
 export const typeDefs = [
   expense,
@@ -11,5 +12,6 @@ export const typeDefs = [
   congressman,
   receipt,
   provider,
-  office
+  office,
+  congressmanStatus
 ]

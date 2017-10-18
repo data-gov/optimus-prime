@@ -13,7 +13,6 @@ export const congressman = `
     birthCity: String
     expenses: [Expense!]!
     office: Office!
+    status: [CongressmanStatus!]!
   }
 `
-
-//   val status: List<CongressmanStatus>,
