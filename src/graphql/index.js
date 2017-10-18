@@ -2,4 +2,6 @@ import { makeExecutableSchema } from 'graphql-tools'
 import { resolvers } from './resolvers'
 import { typeDefs } from './typeDefs'
 
-export const schema = makeExecutableSchema({typeDefs, resolvers})
+const logger = { log: (e) => console.log(e) }
+
+export const schema = makeExecutableSchema({typeDefs, resolvers, logger})

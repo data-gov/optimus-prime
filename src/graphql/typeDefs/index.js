@@ -1,28 +1,5 @@
-export const typeDefs = `
-  type Link {
-    id: ID!
-    url: String!
-    description: String!
-  }
+import { expense } from './expense'
+import { link } from './link'
+import { query } from './query'
 
-  type Expense {
-    id: ID!
-    refundNumber: Int!
-    glossValue: Int!
-    year: Int!
-    month: Int!
-    lotId: Int!
-    parcel: Int!
-    kind: String!
-    netValue: Float!
-  }
-
-  type Mutation {
-    createLink(url: String!, description: String!): Link
-  }
-  
-  type Query {
-    allLinks: [Link!]!
-    allExpenses: [Expense!]!
-  }
-`
+export const typeDefs = [expense, link, query]
