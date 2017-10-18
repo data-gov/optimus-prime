@@ -7,7 +7,7 @@ import { errorHandler } from './error/errorHandler'
 
 export const router = Router()
 
+router.use('/health', health)
 router.use(graphql)
 router.use(notFound)
 router.use(errorHandler)
-router.use('/health', health)
