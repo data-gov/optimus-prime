@@ -9,5 +9,7 @@ export const expense = `
     parcel: Int!
     kind: String!
     netValue: Float!
+    provider: Provider!
+    receipt: Receipt!
   }
 `
