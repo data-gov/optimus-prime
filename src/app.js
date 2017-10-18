@@ -3,7 +3,8 @@ import logger from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
 
-import { getGraphqlConfig, readDotEnvFile } from './config'
+import { readDotEnvFile } from './config/dotEnv'
+import { getGraphqlConfig } from './config/graphql'
 import { router } from './routes'
 
 export const initializeApp = async () => {
