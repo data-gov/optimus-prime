@@ -6,7 +6,7 @@ import bodyParser from 'body-parser'
 import { initConfigurations } from './config'
 import { router } from './routes'
 
-export const initializeApp = async () => {
+export const initializeApp = async (port) => {
   await initConfigurations()
   const app = express()
 
@@ -16,6 +16,8 @@ export const initializeApp = async () => {
   app.use(logger('dev'))
   app.use(helmet())
   app.use(router)
+
+  app.set('port', port)
 
   return app
 }
