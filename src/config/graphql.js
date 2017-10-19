@@ -1,4 +1,4 @@
-import { graphqlExpress } from 'apollo-server-express'
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
 import { mongoConnection } from './mongo'
 import { schema } from '../graphql'
 
@@ -11,4 +11,9 @@ export const getGraphqlConfig = async () => {
   }
 
   return graphqlExpress(graphqlConfig)
+}
+
+export const getGraphiqlConfig = () => {
+  const graphiqlConfig = { endpointURL: '/graphql' }
+  return graphiqlExpress(graphiqlConfig)
 }
