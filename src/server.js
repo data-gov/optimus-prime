@@ -59,5 +59,6 @@ function onListening (server) {
     const addr = server.address()
     const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
     log('Listening on ' + bind)
+    log(`Try it out on http://localhost:${addr.port}/graphiql`)
   }
 }

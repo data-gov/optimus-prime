@@ -1,6 +1,6 @@
 export const Query = {
-  allExpenses: async (obj, args, context) => {
-    const { ExpenseService } = context.services
-    return ExpenseService.findAllExpenses()
+  allCongressmen: async (obj, args, context) => {
+    const { CongressmenService } = context.services
+    return CongressmenService.findAllCongressmen()
   }
 }

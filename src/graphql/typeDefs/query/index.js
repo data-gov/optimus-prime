@@ -1,6 +1,6 @@
 const query = `
   type Query {
-    allExpenses: [Expense!]!
+    allCongressmen: [Congressman!]!
   }
 `
 
