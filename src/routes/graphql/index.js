@@ -1,13 +1,9 @@
 import { Router } from 'express'
 import { getGraphqlConfig, getGraphiqlConfig } from '../../config/graphql'
 
-export const getGraphqlRouter = async () => {
-  const router = Router()
-  const graphqlConfig = await getGraphqlConfig()
-  const graphiqlConfig = getGraphiqlConfig()
+const router = Router()
 
-  router.use('/graphiql', graphiqlConfig)
-  router.use('/graphql', graphqlConfig)
+router.use('/graphiql', getGraphiqlConfig())
+router.use('/graphql', getGraphqlConfig())
 
-  return router
-}
+export const graphqlRouter = router

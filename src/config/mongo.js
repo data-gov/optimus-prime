@@ -4,20 +4,15 @@ let mongo
 
 export const getMongoConnection = async () => {
   if (!mongo) {
-    mongo = await MongoClient.connect(process.env.MONGO_URL)
-    setupLogger()
+    await connectMongo()
   }
 
   return mongo
 }
 
-export const mongoConnection = async () => {
-  const db = await getMongoConnection()
-
-  return {
-    Links: db.collection('links'),
-    Expenses: db.collection('expenses')
-  }
+export const connectMongo = async () => {
+  mongo = await MongoClient.connect(process.env.MONGO_URL)
+  setupLogger()
 }
 
 const setupLogger = () => {
