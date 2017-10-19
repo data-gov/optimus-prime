@@ -1,8 +1,19 @@
 import { Logger, MongoClient } from 'mongodb'
 
+let mongo
+
+export const getMongoConnection = async () => {
+  if (!mongo) {
+    mongo = await MongoClient.connect(process.env.MONGO_URL)
+    setupLogger()
+  }
+
+  return mongo
+}
+
 export const mongoConnection = async () => {
-  const db = await MongoClient.connect(process.env.MONGO_URL)
-  setupLogger()
+  const db = await getMongoConnection()
+
   return {
     Links: db.collection('links'),
     Expenses: db.collection('expenses')

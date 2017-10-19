@@ -1,11 +1,16 @@
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
 import { mongoConnection } from './mongo'
 import { schema } from '../graphql'
+import ExpenseService from '../services/expense'
 
 export const getGraphqlConfig = async () => {
-  const mongo = await mongoConnection()
+  await mongoConnection()
   const graphqlConfig = {
-    context: { mongo },
+    context: {
+      services: {
+        ExpenseService
+      }
+    },
     debug: true,
     schema
   }
