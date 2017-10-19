@@ -1,6 +1,7 @@
-export const query = `
+const query = `
   type Query {
-    allLinks: [Link!]!
     allExpenses: [Expense!]!
   }
 `
+
+export default query

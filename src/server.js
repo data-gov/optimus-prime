@@ -1,65 +1,46 @@
 #!/usr/bin/env node
 
 import http from 'http'
+import debug from 'debug'
 import { initializeApp } from './app'
-const debug = require('debug')('optimus-prime:server')
 
-const start = async () => {
-  /**
-   * Get port from environment and store in Express.
-   */
-  const app = await initializeApp()
+const log = debug('optimus-prime:server')
+
+start()
+
+async function start () {
   const port = normalizePort(process.env.PORT || '3000')
-  app.set('port', port)
+  const app = await initializeApp(port)
+  createServer(app, port)
+}
 
-  /**
-   * Create HTTP server.
-   */
-
+function createServer (app, port) {
   const server = http.createServer(app)
-
-  /**
-   * Listen on provided port, on all network interfaces.
-   */
-
   server.listen(port)
-  server.on('error', onError)
-  server.on('listening', onListening)
+  server.on('error', onError(port))
+  server.on('listening', onListening(server))
+}
 
-  /**
-   * Normalize a port into a number, string, or false.
-   */
+function normalizePort (val) {
+  const port = parseInt(val, 10)
 
-  function normalizePort (val) {
-    const port = parseInt(val, 10)
-
-    if (isNaN(port)) {
-      // named pipe
-      return val
-    }
-
-    if (port >= 0) {
-      // port number
-      return port
-    }
-
-    return false
+  if (isNaN(port)) {
+    return val
+  } else if (port >= 0) {
+    return port
   }
 
-  /**
-   * Event listener for HTTP server "error" event.
-   */
+  return false
+}
 
-  function onError (error) {
+function onError (port) {
+  return function (error) {
+    const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port
+
     if (error.syscall !== 'listen') {
       throw error
     }
 
-    const bind = typeof port === 'string'
-      ? 'Pipe ' + port
-      : 'Port ' + port
-
-    // handle specific listen errors with friendly messages
     switch (error.code) {
       case 'EACCES':
         console.error(bind + ' requires elevated privileges')
@@ -71,18 +52,12 @@ const start = async () => {
         throw error
     }
   }
-
-  /**
-   * Event listener for HTTP server "listening" event.
-   */
-
-  function onListening () {
-    const addr = server.address()
-    const bind = typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr.port
-    debug('Listening on ' + bind)
-  }
 }
 
-start()
+function onListening (server) {
+  return function () {
+    const addr = server.address()
+    const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
+    log('Listening on ' + bind)
+  }
+}

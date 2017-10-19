@@ -1,14 +1,9 @@
 import { Router } from 'express'
-import { graphiqlExpress } from 'apollo-server-express'
-import { getGraphqlConfig } from '../../config/graphql'
+import { getGraphqlConfig, getGraphiqlConfig } from '../../config/graphql'
 
-export const getGraphqlRouter = async () => {
-  const router = Router()
-  const graphqlConfig = await getGraphqlConfig()
-  const graphiqlConfig = { endpointURL: '/graphql' }
+const router = Router()
 
-  router.use('/graphiql', graphiqlExpress(graphiqlConfig))
-  router.use('/graphql', graphqlConfig)
+router.use('/graphiql', getGraphiqlConfig())
+router.use('/graphql', getGraphqlConfig())
 
-  return router
-}
+export const graphqlRouter = router

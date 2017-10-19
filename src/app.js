@@ -3,12 +3,11 @@ import helmet from 'helmet'
 import express from 'express'
 import bodyParser from 'body-parser'
 
-import { readDotEnvFile } from './config/dotEnv'
-import { getRouter } from './routes'
+import { initConfigurations } from './config'
+import { router } from './routes'
 
-export const initializeApp = async () => {
-  await readDotEnvFile()
-  const router = await getRouter()
+export const initializeApp = async (port) => {
+  await initConfigurations()
   const app = express()
 
   app.use(bodyParser.urlencoded({ extended: false }))
@@ -17,6 +16,8 @@ export const initializeApp = async () => {
   app.use(logger('dev'))
   app.use(helmet())
   app.use(router)
+
+  app.set('port', port)
 
   return app
 }

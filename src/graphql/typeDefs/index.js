@@ -1,5 +1,9 @@
-import { expense } from './expense'
-import { link } from './link'
-import { query } from './query'
+import Query from './query'
+import Expense from './expense'
+import Congressman from './congressman'
 
-export const typeDefs = [expense, link, query]
+export const typeDefs = [
+  Query,
+  Expense,
+  Congressman
+]
