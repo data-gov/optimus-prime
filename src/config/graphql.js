@@ -1,14 +1,10 @@
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
-import ExpenseService from '../services/expense'
+import { services } from '../services'
 import { schema } from '../graphql'
 
 export const getGraphqlConfig = () => {
   const graphqlConfig = {
-    context: {
-      services: {
-        ExpenseService
-      }
-    },
+    context: { services },
     debug: true,
     schema
   }
