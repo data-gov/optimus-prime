@@ -8,7 +8,7 @@ export const Query = {
   }
 }
 
-function congressmanFilterBuilder (filter = {}) {
+export function congressmanFilterBuilder (filter = {}) {
   const { nameContains } = filter
 
   if (filter.nameContains) {
