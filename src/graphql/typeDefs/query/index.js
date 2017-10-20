@@ -1,6 +1,10 @@
 const query = `
   type Query {
-    allCongressmen: [Congressman!]!
+    allCongressmen(filter: CongressmenFilter): [Congressman!]!
+  }
+
+  input CongressmenFilter {
+    nameContains: String
   }
 `
 

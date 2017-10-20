@@ -1,6 +1,19 @@
+const FIND_ALL = {}
+
 export const Query = {
   allCongressmen: async (obj, args, context) => {
     const { CongressmenService } = context.services
-    return CongressmenService.findAllCongressmen()
+    const filter = congressmanFilterBuilder(args.filter)
+    return CongressmenService.findAllCongressmen(filter)
+  }
+}
+
+function congressmanFilterBuilder (filter = {}) {
+  const { nameContains } = filter
+
+  if (filter.nameContains) {
+    return { name: { $regex: `.*${nameContains}.*` } }
+  } else {
+    return FIND_ALL
   }
 }
