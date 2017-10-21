@@ -1,12 +1,22 @@
 import { getMongoConnection } from '../config/mongo'
 const FIND_ALL = {}
 
-export const findAllCongressmen = async (filter = FIND_ALL) => {
+const collection = async () => {
   const mongo = await getMongoConnection()
-  const congressmenCollection = mongo.collection('congressmen')
+  return mongo.collection('congressmen')
+}
+
+export const findAllCongressmen = async (filter = FIND_ALL) => {
+  const congressmenCollection = await collection()
   return congressmenCollection.find(filter).toArray()
 }
 
+export const findCongressmanById = async (id) => {
+  const congressmenCollection = await collection()
+  return congressmenCollection.find({ _id: id })
+}
+
 export default {
-  findAllCongressmen
+  findAllCongressmen,
+  findCongressmanById
 }

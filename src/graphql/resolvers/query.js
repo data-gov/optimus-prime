@@ -5,6 +5,10 @@ export const Query = {
     const { CongressmenService } = context.services
     const filter = congressmanFilterBuilder(args.filter)
     return CongressmenService.findAllCongressmen(filter)
+  },
+  mostVotedCongressmanByState: async (obj, args, context) => {
+    const { ElectionService } = context.services
+    return ElectionService.findMostVotedDeputyByState(args.state)
   }
 }
 
