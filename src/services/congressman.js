@@ -13,7 +13,7 @@ export const findAllCongressmen = async (filter = FIND_ALL) => {
 
 export const findCongressmanById = async (id) => {
   const congressmenCollection = await collection()
-  return congressmenCollection.find({ _id: id })
+  return congressmenCollection.findOne({ _id: id })
 }
 
 export default {
