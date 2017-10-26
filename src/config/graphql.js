@@ -5,6 +5,7 @@ import { schema } from '../graphql'
 export const getGraphqlConfig = () => {
   const graphqlConfig = {
     context: { services },
+    tracing: true,
     debug: true,
     schema
   }
