@@ -3,13 +3,14 @@
 import http from 'http'
 import debug from 'debug'
 import { initializeApp } from './app'
+import { OPTIMUS_PRIME_DEBUG, getPort } from './config/constants'
 
-const log = debug('optimus-prime:server')
+const log = debug(OPTIMUS_PRIME_DEBUG)
 
 start()
 
 async function start () {
-  const port = normalizePort(process.env.PORT || '3000')
+  const port = normalizePort(getPort())
   const app = await initializeApp(port)
   createServer(app, port)
 }
