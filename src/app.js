@@ -15,13 +15,13 @@ export const initializeApp = async (port) => {
 
   app.use(bodyParser.urlencoded({ extended: false }))
   app.disable('x-powered-by')
-  app.use(bodyParser.json())
-  app.use(compression())
-  app.use(logger('dev'))
-  app.use(helmet())
+  app.use(bodyParser.json());
+  app.use(compression());
+  app.use(logger('dev'));
+  app.use(helmet());
   app.use(router)
 
-  app.set('port', port)
+  app.set('port', port);
 
   return app
 }
