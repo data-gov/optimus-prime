@@ -10,7 +10,7 @@ export const findMostVotedDeputyByState = async (state) => {
 
 export const findCandidatesByRoleAndYear = async (role, year) => {
   const election = await byRoleAndYear(role, year)
-  const candidatesByRole = election.post[0].candidates
+  const candidatesByRole = election[0].post[0].candidates
   return candidatesByRole.map(candidate => candidate.name)
 }
 
