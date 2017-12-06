@@ -1,5 +1,3 @@
-import ElectionService from '../../services/election'
-
 const FIND_ALL = {}
 
 export const Query = {
