@@ -10,9 +10,9 @@ export const Query = {
     const { ElectionService } = context.services
     return ElectionService.findMostVotedDeputyByState(args.state)
   },
-  candidatesByYear: async (obj, args, context) => {
-    const { MockedDataService } = context.services
-    return MockedDataService.findCandidatesByRoleAndYear(args.role, args.year)
+  candidatesByRoleAndYear: async (obj, args, context) => {
+    const { ElectionService } = context.services
+    return ElectionService.findCandidatesByRoleAndYear(args.role, args.year)
   }
 }
 

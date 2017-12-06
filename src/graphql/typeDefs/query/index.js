@@ -2,7 +2,7 @@ const query = `
   type Query {
     allCongressmen(filter: CongressmenFilter): [Congressman!]!
     mostVotedCongressmanByState(state: String!): Congressman
-    candidatesByYear(role: String!, year: Int!): [Congressman!]!
+    candidatesByRoleAndYear(role: String!, year: Int!): [String]!
   }
 
   input CongressmenFilter {
