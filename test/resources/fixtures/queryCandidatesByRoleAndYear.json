@@ -1,1921 +1,1922 @@
-
-{
-  "_id" : 2014,
-  "post" : [
-    {
-      "_id" : 1,
-      "postDescription" : "PRESIDENTE",
-      "candidates" : [
-        {
-          "_id" : 21,
-          "name" : "MAURO LUÍS IASI",
-          "partyAcronym" : "PCB",
-          "partyNumber" : 21,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 68
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 892
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 545
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 162
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 2890
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 1832
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 559
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 723
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 1256
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 1151
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 5469
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 390
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 529
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 833
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 796
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 1719
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 487
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 2409
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 8548
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 641
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 208
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 71
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 2301
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 1413
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 764
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 10667
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 261
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 261
-            }
-          ]
-        },
-        {
-          "_id" : 29,
-          "name" : "RUI COSTA PIMENTA",
-          "partyAcronym" : "PCO",
-          "partyNumber" : 29,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 14
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 125
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 98
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 21
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 555
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 342
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 473
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 215
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 301
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 158
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 1489
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 97
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 101
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 207
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 247
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 322
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 151
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 560
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 1450
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 162
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 63
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 48
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 505
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 390
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 142
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 3971
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 44
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 73
-            }
-          ]
-        },
-        {
-          "_id" : 28,
-          "name" : "JOSÉ LEVY FIDELIX DA CRUZ",
-          "partyAcronym" : "PRTB",
-          "partyNumber" : 28,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 639
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 7069
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 10261
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 1549
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 15336
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 15971
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 15270
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 9021
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 12393
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 6707
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 25939
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 4623
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 4462
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 11501
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 7539
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 11498
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 2338
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 33612
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 65015
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 5292
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 3819
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 1285
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 17954
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 15774
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 3677
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 136244
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 1654
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 436
-            }
-          ]
-        },
-        {
-          "_id" : 40,
-          "name" : "MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA",
-          "partyAcronym" : "PSB",
-          "partyNumber" : 40,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 167603
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 356803
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 361632
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 77791
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 1284711
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 638614
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 565279
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 567964
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 771591
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 535013
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 1555553
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 257976
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 220067
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 627319
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 393685
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 2311491
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 246271
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 861820
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 2592292
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 286301
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 86293
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 47087
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 732828
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 476430
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 203390
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 5765598
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 150690
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 34527
-            }
-          ]
-        },
-        {
-          "_id" : 20,
-          "name" : "EVERALDO DIAS PEREIRA",
-          "partyAcronym" : "PSC",
-          "partyNumber" : 20,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 1203
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 8413
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 42697
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 5116
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 37194
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 25749
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 10053
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 16138
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 19005
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 22389
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 67486
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 6977
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 9129
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 43068
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 12102
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 15691
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 6284
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 40656
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 136163
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 13316
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 12512
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 5194
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 33053
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 23661
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 18776
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 142842
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 4740
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 906
-            }
-          ]
-        },
-        {
-          "_id" : 45,
-          "name" : "AÉCIO NEVES DA CUNHA",
-          "partyAcronym" : "PSDB",
-          "partyNumber" : 45,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 116109
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 311830
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 326257
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 99125
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 1277512
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 677587
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 570494
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 694085
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 1341320
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 365655
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 4417876
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 558826
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 693755
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 1058334
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 490962
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 285315
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 242256
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 3021988
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 2249662
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 330264
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 371937
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 109070
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 2639647
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 1963772
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 248756
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 10165921
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 203183
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 65713
-            },
-            {
-              "state" : "AC",
-              "shift" : 2,
-              "quantity" : 243677
-            },
-            {
-              "state" : "AL",
-              "shift" : 2,
-              "quantity" : 574322
-            },
-            {
-              "state" : "AM",
-              "shift" : 2,
-              "quantity" : 556545
-            },
-            {
-              "state" : "AP",
-              "shift" : 2,
-              "quantity" : 142780
-            },
-            {
-              "state" : "BA",
-              "shift" : 2,
-              "quantity" : 2153111
-            },
-            {
-              "state" : "CE",
-              "shift" : 2,
-              "quantity" : 1068169
-            },
-            {
-              "state" : "DF",
-              "shift" : 2,
-              "quantity" : 946171
-            },
-            {
-              "state" : "ES",
-              "shift" : 2,
-              "quantity" : 1065485
-            },
-            {
-              "state" : "GO",
-              "shift" : 2,
-              "quantity" : 1819139
-            },
-            {
-              "state" : "MA",
-              "shift" : 2,
-              "quantity" : 667823
-            },
-            {
-              "state" : "MG",
-              "shift" : 2,
-              "quantity" : 5432465
-            },
-            {
-              "state" : "MS",
-              "shift" : 2,
-              "quantity" : 762797
-            },
-            {
-              "state" : "MT",
-              "shift" : 2,
-              "quantity" : 865610
-            },
-            {
-              "state" : "PA",
-              "shift" : 2,
-              "quantity" : 1561066
-            },
-            {
-              "state" : "PB",
-              "shift" : 2,
-              "quantity" : 768475
-            },
-            {
-              "state" : "PE",
-              "shift" : 2,
-              "quantity" : 1460279
-            },
-            {
-              "state" : "PI",
-              "shift" : 2,
-              "quantity" : 384157
-            },
-            {
-              "state" : "PR",
-              "shift" : 2,
-              "quantity" : 3769054
-            },
-            {
-              "state" : "RJ",
-              "shift" : 2,
-              "quantity" : 3685122
-            },
-            {
-              "state" : "RN",
-              "shift" : 2,
-              "quantity" : 516487
-            },
-            {
-              "state" : "RO",
-              "shift" : 2,
-              "quantity" : 442698
-            },
-            {
-              "state" : "RR",
-              "shift" : 2,
-              "quantity" : 139752
-            },
-            {
-              "state" : "RS",
-              "shift" : 2,
-              "quantity" : 3455214
-            },
-            {
-              "state" : "SC",
-              "shift" : 2,
-              "quantity" : 2472142
-            },
-            {
-              "state" : "SE",
-              "shift" : 2,
-              "quantity" : 380654
-            },
-            {
-              "state" : "SP",
-              "shift" : 2,
-              "quantity" : 15311664
-            },
-            {
-              "state" : "TO",
-              "shift" : 2,
-              "quantity" : 292176
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 2,
-              "quantity" : 104121
-            }
-          ]
-        },
-        {
-          "_id" : 27,
-          "name" : "JOSE MARIA EYMAEL",
-          "partyAcronym" : "PSDC",
-          "partyNumber" : 27,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 282
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 610
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 621
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 435
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 1828
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 3193
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 1295
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 1133
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 1948
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 2205
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 5545
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 478
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 470
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 915
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 911
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 1266
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 752
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 4828
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 11754
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 929
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 634
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 515
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 2255
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 2005
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 431
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 13510
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 221
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 281
-            }
-          ]
-        },
-        {
-          "_id" : 50,
-          "name" : "LUCIANA KREBS GENRO",
-          "partyAcronym" : "PSOL",
-          "partyNumber" : 50,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 867
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 15236
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 15957
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 4008
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 55837
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 52484
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 31435
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 19016
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 30411
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 13100
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 139889
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 10708
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 10093
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 40353
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 16847
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 40455
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 10159
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 79267
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 227432
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 20212
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 4664
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 2815
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 143370
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 53532
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 12827
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 554863
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 2875
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 3474
-            }
-          ]
-        },
-        {
-          "_id" : 16,
-          "name" : "JOSÉ MARIA DE ALMEIDA",
-          "partyAcronym" : "PSTU",
-          "partyNumber" : 16,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 112
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 1197
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 1353
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 1122
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 3508
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 4661
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 1495
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 1313
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 1765
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 4340
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 8358
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 977
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 474
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 3012
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 1071
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 2760
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 1456
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 4552
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 14430
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 2830
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 429
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 209
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 4083
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 3975
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 1703
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 19129
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 247
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 648
-            }
-          ]
-        },
-        {
-          "_id" : 13,
-          "name" : "DILMA VANA ROUSSEFF",
-          "partyAcronym" : "PT",
-          "partyNumber" : 13,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 111641
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 703809
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 915299
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 199016
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 4292850
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 3087658
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 363861
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 653839
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 1035911
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 2187864
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 4830867
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 507063
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 616411
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 2040981
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 1166860
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 2127010
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 1235337
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 1973421
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 2971736
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 999625
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 345305
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 82942
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 2752075
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 1141102
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 601740
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 5930661
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 368431
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 24353
-            },
-            {
-              "state" : "AC",
-              "shift" : 2,
-              "quantity" : 138982
-            },
-            {
-              "state" : "AL",
-              "shift" : 2,
-              "quantity" : 941445
-            },
-            {
-              "state" : "AM",
-              "shift" : 2,
-              "quantity" : 1033457
-            },
-            {
-              "state" : "AP",
-              "shift" : 2,
-              "quantity" : 227509
-            },
-            {
-              "state" : "BA",
-              "shift" : 2,
-              "quantity" : 5059860
-            },
-            {
-              "state" : "CE",
-              "shift" : 2,
-              "quantity" : 3522884
-            },
-            {
-              "state" : "DF",
-              "shift" : 2,
-              "quantity" : 582354
-            },
-            {
-              "state" : "ES",
-              "shift" : 2,
-              "quantity" : 912391
-            },
-            {
-              "state" : "GO",
-              "shift" : 2,
-              "quantity" : 1365964
-            },
-            {
-              "state" : "MA",
-              "shift" : 2,
-              "quantity" : 2475985
-            },
-            {
-              "state" : "MG",
-              "shift" : 2,
-              "quantity" : 5981162
-            },
-            {
-              "state" : "MS",
-              "shift" : 2,
-              "quantity" : 590965
-            },
-            {
-              "state" : "MT",
-              "shift" : 2,
-              "quantity" : 717412
-            },
-            {
-              "state" : "PA",
-              "shift" : 2,
-              "quantity" : 2104151
-            },
-            {
-              "state" : "PB",
-              "shift" : 2,
-              "quantity" : 1381305
-            },
-            {
-              "state" : "PE",
-              "shift" : 2,
-              "quantity" : 3438829
-            },
-            {
-              "state" : "PI",
-              "shift" : 2,
-              "quantity" : 1385265
-            },
-            {
-              "state" : "PR",
-              "shift" : 2,
-              "quantity" : 2409677
-            },
-            {
-              "state" : "RJ",
-              "shift" : 2,
-              "quantity" : 4489860
-            },
-            {
-              "state" : "RN",
-              "shift" : 2,
-              "quantity" : 1201768
-            },
-            {
-              "state" : "RO",
-              "shift" : 2,
-              "quantity" : 364213
-            },
-            {
-              "state" : "RR",
-              "shift" : 2,
-              "quantity" : 97425
-            },
-            {
-              "state" : "RS",
-              "shift" : 2,
-              "quantity" : 2998545
-            },
-            {
-              "state" : "SC",
-              "shift" : 2,
-              "quantity" : 1354775
-            },
-            {
-              "state" : "SE",
-              "shift" : 2,
-              "quantity" : 772482
-            },
-            {
-              "state" : "SP",
-              "shift" : 2,
-              "quantity" : 8492620
-            },
-            {
-              "state" : "TO",
-              "shift" : 2,
-              "quantity" : 428774
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 2,
-              "quantity" : 31059
-            }
-          ]
-        },
-        {
-          "_id" : 43,
-          "name" : "EDUARDO JORGE MARTINS ALVES SOBRINHO",
-          "partyAcronym" : "PV",
-          "partyNumber" : 43,
-          "votes" : [
-            {
-              "state" : "AC",
-              "shift" : 1,
-              "quantity" : 597
-            },
-            {
-              "state" : "AL",
-              "shift" : 1,
-              "quantity" : 3552
-            },
-            {
-              "state" : "AM",
-              "shift" : 1,
-              "quantity" : 4395
-            },
-            {
-              "state" : "AP",
-              "shift" : 1,
-              "quantity" : 1254
-            },
-            {
-              "state" : "BA",
-              "shift" : 1,
-              "quantity" : 15722
-            },
-            {
-              "state" : "CE",
-              "shift" : 1,
-              "quantity" : 14094
-            },
-            {
-              "state" : "DF",
-              "shift" : 1,
-              "quantity" : 19478
-            },
-            {
-              "state" : "ES",
-              "shift" : 1,
-              "quantity" : 11875
-            },
-            {
-              "state" : "GO",
-              "shift" : 1,
-              "quantity" : 12259
-            },
-            {
-              "state" : "MA",
-              "shift" : 1,
-              "quantity" : 6965
-            },
-            {
-              "state" : "MG",
-              "shift" : 1,
-              "quantity" : 54483
-            },
-            {
-              "state" : "MS",
-              "shift" : 1,
-              "quantity" : 4093
-            },
-            {
-              "state" : "MT",
-              "shift" : 1,
-              "quantity" : 4128
-            },
-            {
-              "state" : "PA",
-              "shift" : 1,
-              "quantity" : 12260
-            },
-            {
-              "state" : "PB",
-              "shift" : 1,
-              "quantity" : 7791
-            },
-            {
-              "state" : "PE",
-              "shift" : 1,
-              "quantity" : 13349
-            },
-            {
-              "state" : "PI",
-              "shift" : 1,
-              "quantity" : 4385
-            },
-            {
-              "state" : "PR",
-              "shift" : 1,
-              "quantity" : 44755
-            },
-            {
-              "state" : "RJ",
-              "shift" : 1,
-              "quantity" : 68032
-            },
-            {
-              "state" : "RN",
-              "shift" : 1,
-              "quantity" : 5346
-            },
-            {
-              "state" : "RO",
-              "shift" : 1,
-              "quantity" : 2368
-            },
-            {
-              "state" : "RR",
-              "shift" : 1,
-              "quantity" : 780
-            },
-            {
-              "state" : "RS",
-              "shift" : 1,
-              "quantity" : 43703
-            },
-            {
-              "state" : "SC",
-              "shift" : 1,
-              "quantity" : 30239
-            },
-            {
-              "state" : "SE",
-              "shift" : 1,
-              "quantity" : 3733
-            },
-            {
-              "state" : "SP",
-              "shift" : 1,
-              "quantity" : 236966
-            },
-            {
-              "state" : "TO",
-              "shift" : 1,
-              "quantity" : 1430
-            },
-            {
-              "state" : "ZZ",
-              "shift" : 1,
-              "quantity" : 2067
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "_class" : "br.com.ratchet.repository.model.Election"
-}
+[
+  {
+    "_id": 2014,
+    "post": [
+      {
+        "_id": 1,
+        "postDescription": "PRESIDENTE",
+        "candidates": [
+          {
+            "_id": 21,
+            "name": "MAURO LUÍS IASI",
+            "partyAcronym": "PCB",
+            "partyNumber": 21,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 68
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 892
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 545
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 162
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 2890
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 1832
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 559
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 723
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 1256
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 1151
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 5469
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 390
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 529
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 833
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 796
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 1719
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 487
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 2409
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 8548
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 641
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 208
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 71
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 2301
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 1413
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 764
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 10667
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 261
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 261
+              }
+            ]
+          },
+          {
+            "_id": 29,
+            "name": "RUI COSTA PIMENTA",
+            "partyAcronym": "PCO",
+            "partyNumber": 29,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 14
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 125
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 98
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 21
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 555
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 342
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 473
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 215
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 301
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 158
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 1489
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 97
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 101
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 207
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 247
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 322
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 151
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 560
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 1450
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 162
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 63
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 48
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 505
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 390
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 142
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 3971
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 44
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 73
+              }
+            ]
+          },
+          {
+            "_id": 28,
+            "name": "JOSÉ LEVY FIDELIX DA CRUZ",
+            "partyAcronym": "PRTB",
+            "partyNumber": 28,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 639
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 7069
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 10261
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 1549
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 15336
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 15971
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 15270
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 9021
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 12393
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 6707
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 25939
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 4623
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 4462
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 11501
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 7539
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 11498
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 2338
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 33612
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 65015
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 5292
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 3819
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 1285
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 17954
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 15774
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 3677
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 136244
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 1654
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 436
+              }
+            ]
+          },
+          {
+            "_id": 40,
+            "name": "MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA",
+            "partyAcronym": "PSB",
+            "partyNumber": 40,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 167603
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 356803
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 361632
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 77791
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 1284711
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 638614
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 565279
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 567964
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 771591
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 535013
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 1555553
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 257976
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 220067
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 627319
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 393685
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 2311491
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 246271
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 861820
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 2592292
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 286301
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 86293
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 47087
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 732828
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 476430
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 203390
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 5765598
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 150690
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 34527
+              }
+            ]
+          },
+          {
+            "_id": 20,
+            "name": "EVERALDO DIAS PEREIRA",
+            "partyAcronym": "PSC",
+            "partyNumber": 20,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 1203
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 8413
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 42697
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 5116
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 37194
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 25749
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 10053
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 16138
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 19005
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 22389
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 67486
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 6977
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 9129
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 43068
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 12102
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 15691
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 6284
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 40656
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 136163
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 13316
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 12512
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 5194
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 33053
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 23661
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 18776
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 142842
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 4740
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 906
+              }
+            ]
+          },
+          {
+            "_id": 45,
+            "name": "AÉCIO NEVES DA CUNHA",
+            "partyAcronym": "PSDB",
+            "partyNumber": 45,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 116109
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 311830
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 326257
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 99125
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 1277512
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 677587
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 570494
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 694085
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 1341320
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 365655
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 4417876
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 558826
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 693755
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 1058334
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 490962
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 285315
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 242256
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 3021988
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 2249662
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 330264
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 371937
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 109070
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 2639647
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 1963772
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 248756
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 10165921
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 203183
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 65713
+              },
+              {
+                "state": "AC",
+                "shift": 2,
+                "quantity": 243677
+              },
+              {
+                "state": "AL",
+                "shift": 2,
+                "quantity": 574322
+              },
+              {
+                "state": "AM",
+                "shift": 2,
+                "quantity": 556545
+              },
+              {
+                "state": "AP",
+                "shift": 2,
+                "quantity": 142780
+              },
+              {
+                "state": "BA",
+                "shift": 2,
+                "quantity": 2153111
+              },
+              {
+                "state": "CE",
+                "shift": 2,
+                "quantity": 1068169
+              },
+              {
+                "state": "DF",
+                "shift": 2,
+                "quantity": 946171
+              },
+              {
+                "state": "ES",
+                "shift": 2,
+                "quantity": 1065485
+              },
+              {
+                "state": "GO",
+                "shift": 2,
+                "quantity": 1819139
+              },
+              {
+                "state": "MA",
+                "shift": 2,
+                "quantity": 667823
+              },
+              {
+                "state": "MG",
+                "shift": 2,
+                "quantity": 5432465
+              },
+              {
+                "state": "MS",
+                "shift": 2,
+                "quantity": 762797
+              },
+              {
+                "state": "MT",
+                "shift": 2,
+                "quantity": 865610
+              },
+              {
+                "state": "PA",
+                "shift": 2,
+                "quantity": 1561066
+              },
+              {
+                "state": "PB",
+                "shift": 2,
+                "quantity": 768475
+              },
+              {
+                "state": "PE",
+                "shift": 2,
+                "quantity": 1460279
+              },
+              {
+                "state": "PI",
+                "shift": 2,
+                "quantity": 384157
+              },
+              {
+                "state": "PR",
+                "shift": 2,
+                "quantity": 3769054
+              },
+              {
+                "state": "RJ",
+                "shift": 2,
+                "quantity": 3685122
+              },
+              {
+                "state": "RN",
+                "shift": 2,
+                "quantity": 516487
+              },
+              {
+                "state": "RO",
+                "shift": 2,
+                "quantity": 442698
+              },
+              {
+                "state": "RR",
+                "shift": 2,
+                "quantity": 139752
+              },
+              {
+                "state": "RS",
+                "shift": 2,
+                "quantity": 3455214
+              },
+              {
+                "state": "SC",
+                "shift": 2,
+                "quantity": 2472142
+              },
+              {
+                "state": "SE",
+                "shift": 2,
+                "quantity": 380654
+              },
+              {
+                "state": "SP",
+                "shift": 2,
+                "quantity": 15311664
+              },
+              {
+                "state": "TO",
+                "shift": 2,
+                "quantity": 292176
+              },
+              {
+                "state": "ZZ",
+                "shift": 2,
+                "quantity": 104121
+              }
+            ]
+          },
+          {
+            "_id": 27,
+            "name": "JOSE MARIA EYMAEL",
+            "partyAcronym": "PSDC",
+            "partyNumber": 27,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 282
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 610
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 621
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 435
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 1828
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 3193
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 1295
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 1133
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 1948
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 2205
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 5545
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 478
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 470
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 915
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 911
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 1266
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 752
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 4828
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 11754
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 929
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 634
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 515
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 2255
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 2005
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 431
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 13510
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 221
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 281
+              }
+            ]
+          },
+          {
+            "_id": 50,
+            "name": "LUCIANA KREBS GENRO",
+            "partyAcronym": "PSOL",
+            "partyNumber": 50,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 867
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 15236
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 15957
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 4008
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 55837
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 52484
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 31435
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 19016
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 30411
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 13100
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 139889
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 10708
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 10093
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 40353
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 16847
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 40455
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 10159
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 79267
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 227432
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 20212
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 4664
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 2815
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 143370
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 53532
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 12827
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 554863
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 2875
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 3474
+              }
+            ]
+          },
+          {
+            "_id": 16,
+            "name": "JOSÉ MARIA DE ALMEIDA",
+            "partyAcronym": "PSTU",
+            "partyNumber": 16,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 112
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 1197
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 1353
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 1122
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 3508
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 4661
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 1495
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 1313
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 1765
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 4340
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 8358
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 977
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 474
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 3012
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 1071
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 2760
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 1456
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 4552
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 14430
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 2830
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 429
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 209
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 4083
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 3975
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 1703
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 19129
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 247
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 648
+              }
+            ]
+          },
+          {
+            "_id": 13,
+            "name": "DILMA VANA ROUSSEFF",
+            "partyAcronym": "PT",
+            "partyNumber": 13,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 111641
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 703809
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 915299
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 199016
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 4292850
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 3087658
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 363861
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 653839
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 1035911
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 2187864
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 4830867
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 507063
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 616411
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 2040981
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 1166860
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 2127010
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 1235337
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 1973421
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 2971736
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 999625
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 345305
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 82942
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 2752075
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 1141102
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 601740
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 5930661
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 368431
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 24353
+              },
+              {
+                "state": "AC",
+                "shift": 2,
+                "quantity": 138982
+              },
+              {
+                "state": "AL",
+                "shift": 2,
+                "quantity": 941445
+              },
+              {
+                "state": "AM",
+                "shift": 2,
+                "quantity": 1033457
+              },
+              {
+                "state": "AP",
+                "shift": 2,
+                "quantity": 227509
+              },
+              {
+                "state": "BA",
+                "shift": 2,
+                "quantity": 5059860
+              },
+              {
+                "state": "CE",
+                "shift": 2,
+                "quantity": 3522884
+              },
+              {
+                "state": "DF",
+                "shift": 2,
+                "quantity": 582354
+              },
+              {
+                "state": "ES",
+                "shift": 2,
+                "quantity": 912391
+              },
+              {
+                "state": "GO",
+                "shift": 2,
+                "quantity": 1365964
+              },
+              {
+                "state": "MA",
+                "shift": 2,
+                "quantity": 2475985
+              },
+              {
+                "state": "MG",
+                "shift": 2,
+                "quantity": 5981162
+              },
+              {
+                "state": "MS",
+                "shift": 2,
+                "quantity": 590965
+              },
+              {
+                "state": "MT",
+                "shift": 2,
+                "quantity": 717412
+              },
+              {
+                "state": "PA",
+                "shift": 2,
+                "quantity": 2104151
+              },
+              {
+                "state": "PB",
+                "shift": 2,
+                "quantity": 1381305
+              },
+              {
+                "state": "PE",
+                "shift": 2,
+                "quantity": 3438829
+              },
+              {
+                "state": "PI",
+                "shift": 2,
+                "quantity": 1385265
+              },
+              {
+                "state": "PR",
+                "shift": 2,
+                "quantity": 2409677
+              },
+              {
+                "state": "RJ",
+                "shift": 2,
+                "quantity": 4489860
+              },
+              {
+                "state": "RN",
+                "shift": 2,
+                "quantity": 1201768
+              },
+              {
+                "state": "RO",
+                "shift": 2,
+                "quantity": 364213
+              },
+              {
+                "state": "RR",
+                "shift": 2,
+                "quantity": 97425
+              },
+              {
+                "state": "RS",
+                "shift": 2,
+                "quantity": 2998545
+              },
+              {
+                "state": "SC",
+                "shift": 2,
+                "quantity": 1354775
+              },
+              {
+                "state": "SE",
+                "shift": 2,
+                "quantity": 772482
+              },
+              {
+                "state": "SP",
+                "shift": 2,
+                "quantity": 8492620
+              },
+              {
+                "state": "TO",
+                "shift": 2,
+                "quantity": 428774
+              },
+              {
+                "state": "ZZ",
+                "shift": 2,
+                "quantity": 31059
+              }
+            ]
+          },
+          {
+            "_id": 43,
+            "name": "EDUARDO JORGE MARTINS ALVES SOBRINHO",
+            "partyAcronym": "PV",
+            "partyNumber": 43,
+            "votes": [
+              {
+                "state": "AC",
+                "shift": 1,
+                "quantity": 597
+              },
+              {
+                "state": "AL",
+                "shift": 1,
+                "quantity": 3552
+              },
+              {
+                "state": "AM",
+                "shift": 1,
+                "quantity": 4395
+              },
+              {
+                "state": "AP",
+                "shift": 1,
+                "quantity": 1254
+              },
+              {
+                "state": "BA",
+                "shift": 1,
+                "quantity": 15722
+              },
+              {
+                "state": "CE",
+                "shift": 1,
+                "quantity": 14094
+              },
+              {
+                "state": "DF",
+                "shift": 1,
+                "quantity": 19478
+              },
+              {
+                "state": "ES",
+                "shift": 1,
+                "quantity": 11875
+              },
+              {
+                "state": "GO",
+                "shift": 1,
+                "quantity": 12259
+              },
+              {
+                "state": "MA",
+                "shift": 1,
+                "quantity": 6965
+              },
+              {
+                "state": "MG",
+                "shift": 1,
+                "quantity": 54483
+              },
+              {
+                "state": "MS",
+                "shift": 1,
+                "quantity": 4093
+              },
+              {
+                "state": "MT",
+                "shift": 1,
+                "quantity": 4128
+              },
+              {
+                "state": "PA",
+                "shift": 1,
+                "quantity": 12260
+              },
+              {
+                "state": "PB",
+                "shift": 1,
+                "quantity": 7791
+              },
+              {
+                "state": "PE",
+                "shift": 1,
+                "quantity": 13349
+              },
+              {
+                "state": "PI",
+                "shift": 1,
+                "quantity": 4385
+              },
+              {
+                "state": "PR",
+                "shift": 1,
+                "quantity": 44755
+              },
+              {
+                "state": "RJ",
+                "shift": 1,
+                "quantity": 68032
+              },
+              {
+                "state": "RN",
+                "shift": 1,
+                "quantity": 5346
+              },
+              {
+                "state": "RO",
+                "shift": 1,
+                "quantity": 2368
+              },
+              {
+                "state": "RR",
+                "shift": 1,
+                "quantity": 780
+              },
+              {
+                "state": "RS",
+                "shift": 1,
+                "quantity": 43703
+              },
+              {
+                "state": "SC",
+                "shift": 1,
+                "quantity": 30239
+              },
+              {
+                "state": "SE",
+                "shift": 1,
+                "quantity": 3733
+              },
+              {
+                "state": "SP",
+                "shift": 1,
+                "quantity": 236966
+              },
+              {
+                "state": "TO",
+                "shift": 1,
+                "quantity": 1430
+              },
+              {
+                "state": "ZZ",
+                "shift": 1,
+                "quantity": 2067
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "_class": "br.com.ratchet.repository.model.Election"
+  }
+]
