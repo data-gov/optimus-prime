@@ -15,5 +15,6 @@ export const findCandidatesByRoleAndYear = async (role, year) => {
 }
 
 export default {
-  findMostVotedDeputyByState
+  findMostVotedDeputyByState,
+  findCandidatesByRoleAndYear
 }
