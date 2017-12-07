@@ -1,4 +1,4 @@
-import {getMongoConnection} from '../../config/mongo'
+import { getMongoConnection } from '../../config/mongo'
 
 const collection = async () => {
   const mongo = await getMongoConnection()
