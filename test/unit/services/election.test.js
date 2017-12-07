@@ -21,4 +21,10 @@ describe('Election service', () => {
     const candidates = await findCandidatesByRoleAndYear('PRESIDENTE', 2014)
     expect(candidates).toEqual(expectedCadidates)
   })
+
+  it('should return empty list when did not found results', async () => {
+    ElectionClient.byRoleAndYear = jest.fn((role, year) => Promise.resolve([]))
+    const candidates = await findCandidatesByRoleAndYear('PRESIDENTE', 2012)
+    expect(candidates).toEqual([])
+  })
 })
