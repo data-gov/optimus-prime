@@ -1,16 +1,14 @@
 import debug from 'debug'
 import { Logger, MongoClient } from 'mongodb'
-import {OPTIMUS_PRIME_DEBUG} from './constants'
+import { OPTIMUS_PRIME_DEBUG } from './constants'
 
 let mongo
 const logger = debug(OPTIMUS_PRIME_DEBUG)
 
-const ELECTION_DB_URL = process.env.MONGO_URL
-
 export const getMongoConnection = async () => mongo || connectMongo()
 
 export const connectMongo = async () => {
-  mongo = await MongoClient.connect(ELECTION_DB_URL)
+  mongo = await MongoClient.connect(process.env.MONGO_URL)
   setupLogger()
 }
 
