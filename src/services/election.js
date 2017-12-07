@@ -6,6 +6,6 @@ export const findCandidatesByRoleAndYear = async (role, year) => {
   return candidatesByRole.map(candidate => candidate.name)
 }
 
-export default {
+export const ElectionService = {
   findCandidatesByRoleAndYear
 }
