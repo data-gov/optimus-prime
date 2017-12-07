@@ -1,9 +1,7 @@
-import CongressmenService from './congressman'
-import ElectionService from './election'
-import MockedDataService from './mockedData'
+import { CongressmenService } from './congressman'
+import { ElectionService } from './election'
 
 export const services = {
   CongressmenService,
-  ElectionService,
-  MockedDataService
+  ElectionService
 }

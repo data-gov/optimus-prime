@@ -6,22 +6,15 @@ export const Query = {
     const filter = congressmanFilterBuilder(args.filter)
     return CongressmenService.findAllCongressmen(filter)
   },
-  mostVotedCongressmanByState: async (obj, args, context) => {
-    const { ElectionService } = context.services
-    return ElectionService.findMostVotedDeputyByState(args.state)
-  },
   candidatesByRoleAndYear: async (obj, args, context) => {
     const { ElectionService } = context.services
-    return ElectionService.findCandidatesByRoleAndYear(args.role, args.year)
+    const { role, year } = args
+    return ElectionService.findCandidatesByRoleAndYear(role, year)
   }
 }
 
 export function congressmanFilterBuilder (filter = {}) {
   const { nameContains } = filter
-
-  if (filter.nameContains) {
-    return { name: { $regex: `.*${nameContains}.*` } }
-  } else {
-    return FIND_ALL
-  }
+  const filteredByName = { name: { $regex: `.*${nameContains}.*` } }
+  return nameContains ? filteredByName : FIND_ALL
 }
