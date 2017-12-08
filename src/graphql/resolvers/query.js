@@ -12,15 +12,9 @@ export const Query = {
     return ElectionService.findCandidatesByRoleAndYear(role, year)
   },
   candidateVotesByState: async (obj, args, context) => {
-    return [{
-      candidateName: 'Vinicius Costa',
-      state: 'RS',
-      votes: {
-        1: 111,
-        2: 222,
-        total: 333
-      }
-    }]
+    const { ElectionService } = context.services
+    const { name, state, year } = args
+    return ElectionService.findCandidateVotesInAYearByNameAndState(name, state, year)
   }
 }
 

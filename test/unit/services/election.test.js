@@ -1,6 +1,6 @@
-import {findCandidatesByRoleAndYear} from '../../../src/services/election'
+import {findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState} from '../../../src/services/election'
 import * as ElectionClient from '../../../src/clients/mongo/election'
-import queryCandidatesByRoleAndYear from '../../resources/fixtures/queryCandidatesByRoleAndYear'
+import queryResults from '../../resources/fixtures/2014_presidents'
 jest.mock('../../../src/clients/mongo/election')
 
 const expectedCadidates = [ 'MAURO LUÍS IASI',
@@ -17,7 +17,7 @@ const expectedCadidates = [ 'MAURO LUÍS IASI',
 
 describe('Election service', () => {
   it('should provide candidates filtered by role and year', async () => {
-    ElectionClient.byRoleAndYear = jest.fn((role, year) => Promise.resolve(queryCandidatesByRoleAndYear))
+    ElectionClient.byRoleAndYear = jest.fn((role, year) => Promise.resolve(queryResults))
     const candidates = await findCandidatesByRoleAndYear('PRESIDENTE', 2014)
     expect(candidates).toEqual(expectedCadidates)
   })
@@ -26,5 +26,15 @@ describe('Election service', () => {
     ElectionClient.byRoleAndYear = jest.fn((role, year) => Promise.resolve([]))
     const candidates = await findCandidatesByRoleAndYear('PRESIDENTE', 2012)
     expect(candidates).toEqual([])
+  })
+
+  it('should', async () => {
+    ElectionClient.byRoleAndYear = jest.fn((role, year) => Promise.resolve(queryResults))
+    const name = 'DILMA VANA ROUSSEFF'
+    const expectedResponse = { name, votes: { first: 111641, second: 138982, total: 250623 } }
+
+    const candidates = await findCandidateVotesInAYearByNameAndState(name, 'AC', 2014)
+
+    expect(candidates).toEqual(expectedResponse)
   })
 })
