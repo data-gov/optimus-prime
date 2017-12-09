@@ -1,10 +1,10 @@
-import Query from './query'
+import { queries } from './queries'
 import Expense from './expense'
 import Congressman from './congressman'
 import Election from './election'
 
 export const typeDefs = [
-  Query,
+  queries,
   Expense,
   Election,
   Congressman
