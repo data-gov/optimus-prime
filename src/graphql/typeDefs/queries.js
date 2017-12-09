@@ -1,4 +1,4 @@
-const query = `
+export const queries = `
   type Query {
     allCongressmen(filter: CongressmenFilter): [Congressman!]!
     mostVotedCongressmanByState(state: String!): Congressman
@@ -10,5 +10,3 @@ const query = `
     nameContains: String
   }
 `
-
-export default query

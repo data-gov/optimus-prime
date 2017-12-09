@@ -1,7 +1,8 @@
 export const candidateVotes = `
   type CandidateVotes {
     votes: Votes!
-    candidateName: String!
+    name: String!
     state: String!
+    year: Int!
   }
 `
