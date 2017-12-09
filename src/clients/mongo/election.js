@@ -5,7 +5,7 @@ const collection = async () => (await getMongoConnection()).collection('election
 export const byYearAndRole = async (year, role) => {
   const elections = await collection()
   const byRoleAndYear = { _id: year, post: { $elemMatch: { postDescription: role } } }
-  const election = elections.find(byRoleAndYear).toArray()
+  const election = await elections.find(byRoleAndYear).toArray()
   return election[0] || []
 }
 
