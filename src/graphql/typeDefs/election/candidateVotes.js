@@ -3,7 +3,6 @@ export const candidateVotes = `
     votes: Votes!
     name: String!
     state: String!
-    role: String
     year: Int!
   }
 `
