@@ -27,6 +27,7 @@ export const filterByYearAndStateWithVotesSum = async (year, state) => {
 
   election.post.forEach(({ postDescription: role, candidates: roleCandidates }) => {
     const postCandidates = roleCandidates.map(toCandidateWithStateVotesSum(role, state, year))
+      .map(({name, votes}) => mapToCandidatesVote(name, state, year, votes))
     candidates.push(...postCandidates)
   })
 

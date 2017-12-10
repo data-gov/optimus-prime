@@ -13,7 +13,7 @@
     "test": "npm run test:unit && npm run test:integration --forceExit",
     "test:unit": "jest ./test/unit/",
     "test:integration": "jest ./test/integration/",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --lastCommit --onlyChanged",
     "test:coverage": "jest --coverage",
     "test:update-coverage": "jest --coverage --forceExit",
     "precommit": "npm run lint:check",

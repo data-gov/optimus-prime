@@ -1,5 +1,5 @@
 import * as ElectionClient from '../../../src/clients/mongo/election'
-import { ElectionService } from '../../../src/services/election'
+import { ElectionService, SHIFT } from '../../../src/services/election'
 import testElection from '../../resources/fixtures/2006_election'
 import queryResults from '../../resources/fixtures/2014_presidents'
 
@@ -52,7 +52,7 @@ describe('Election service', () => {
       name: 'LUIZ INACIO LULA DA SILVA',
       year,
       state,
-      votes: { first: 953609, second: 1190459, total: 2144068 }
+      votes: { first: 953609, second: 1190459, total: 2144068 },
     }
 
     const candidate = await findMostVoteCandidateInYearByState(year, state)
@@ -62,15 +62,15 @@ describe('Election service', () => {
   it('should return most voted candidate by state for a specific shift', async () => {
     ElectionClient.byYear = jest.fn(() => Promise.resolve(testElection))
     const year = 2006
-    const state = 'ES'
+    const state = 'RS'
     const expected = {
-      name: 'LUIZ INACIO LULA DA SILVA',
-      year,
-      state,
-      votes: { first: 953609, second: 1190459, total: 2144068 }
+      name: 'GERALDO JOSÉ RODRIGUES ALCKMIN FILHO',
+      state: 'RS',
+      votes: { 'first': 3460730, 'second': 3485916, 'total': 6946646 },
+      year: 2006
     }
 
-    const candidate = await findMostVoteCandidateInYearByState(year, state, 2)
+    const candidate = await findMostVoteCandidateInYearByState(year, state, 1)
     expect(candidate).toEqual(expected)
   })
 })
