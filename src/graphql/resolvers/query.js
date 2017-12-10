@@ -15,6 +15,11 @@ export const Query = {
     const { ElectionService } = context.services
     const { name, state, year } = args
     return ElectionService.findCandidateVotesInAYearByNameAndState(name, state, year)
+  },
+  mostVotedInYearByState: async (obj, args, context) => {
+    const { ElectionService } = context.services
+    const { state, year, shift } = args
+    return ElectionService.findMostVoteCandidateInYearByState(year, state, shift)
   }
 }
 

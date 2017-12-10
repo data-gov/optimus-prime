@@ -1,11 +1,11 @@
-import { byYear } from '../../../src/clients/mongo/election'
-import { ElectionService } from '../../../src/services/election'
-import queryResults from '../../resources/fixtures/2014_presidents'
-import testElection from '../../resources/fixtures/2006_election'
 import * as ElectionClient from '../../../src/clients/mongo/election'
+import { ElectionService } from '../../../src/services/election'
+import testElection from '../../resources/fixtures/2006_election'
+import queryResults from '../../resources/fixtures/2014_presidents'
+
 jest.mock('../../../src/clients/mongo/election')
 
-const expectedCadidates = [ 'MAURO LUÍS IASI',
+const expectedCadidates = ['MAURO LUÍS IASI',
   'RUI COSTA PIMENTA',
   'JOSÉ LEVY FIDELIX DA CRUZ',
   'MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA',
@@ -15,9 +15,9 @@ const expectedCadidates = [ 'MAURO LUÍS IASI',
   'LUCIANA KREBS GENRO',
   'JOSÉ MARIA DE ALMEIDA',
   'DILMA VANA ROUSSEFF',
-  'EDUARDO JORGE MARTINS ALVES SOBRINHO' ]
+  'EDUARDO JORGE MARTINS ALVES SOBRINHO']
 
-const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState } = ElectionService
+const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState } = ElectionService
 
 describe('Election service', () => {
   it('should provide candidates filtered by role and year', async () => {
@@ -42,5 +42,20 @@ describe('Election service', () => {
     const votes = await findCandidateVotesInAYearByNameAndState(name, state, year)
 
     expect(votes).toEqual(expectedResponse)
+  })
+
+  it('should return most voted candidate by state', async () => {
+    ElectionClient.byYear = jest.fn(() => Promise.resolve(testElection))
+    const year = 2006
+    const state = 'ES'
+    const expected = {
+      name: 'LUIZ INACIO LULA DA SILVA',
+      year,
+      state,
+      votes: { first: 953609, second: 1190459, total: 2144068 }
+    }
+
+    const candidate = await findMostVoteCandidateInYearByState(year, state)
+    expect(candidate).toEqual(expected)
   })
 })

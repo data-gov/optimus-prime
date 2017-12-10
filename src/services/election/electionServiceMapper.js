@@ -21,6 +21,24 @@ export const filterByYearAndRole = async (year, role) => {
   return candidatesByRole
 }
 
+export const filterByYearAndStateWithVotesSum = async (year, state) => {
+  const election = await byYear(year)
+  const candidates = []
+
+  election.post.forEach(({ postDescription: role, candidates: roleCandidates }) => {
+    const postCandidates = roleCandidates.map(toCandidateWithStateVotesSum(role, state, year))
+    candidates.push(...postCandidates)
+  })
+
+  return candidates
+}
+
+const toCandidateWithStateVotesSum = (role, state, year) => ({name, votes}) => {
+  const votesFilteredByState = votes.filter(vote => vote.state === state)
+  const count = countCandidateVote(votesFilteredByState, state)
+  return { name, role, year, votes: count }
+}
+
 export const mapToCandidatesVote = (name, state, year, {1: first, 2: second = 0}) => ({
   state,
   name,
