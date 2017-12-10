@@ -3,8 +3,8 @@ const FIND_ALL = {}
 const allCongressmen = async (obj, { filter }, { services: { CongressmenService } }) =>
   CongressmenService.findAllCongressmen(filter)
 
-const topVotingState = async (obj, { role, year }, { services: { ElectionService } }) =>
-  ElectionService.findCandidatesByRoleAndYear(role, year)
+const topVotingState = async (obj, { name, year, shift }, { services: { ElectionService } }) =>
+  ElectionService.findTopVotingStateByCandidateName(year, name, shift)
 
 const candidatesByRoleAndYear = async (obj, { role, year }, { services: { ElectionService } }) =>
   ElectionService.findCandidatesByRoleAndYear(role, year)
