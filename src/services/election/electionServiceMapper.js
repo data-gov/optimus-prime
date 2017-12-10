@@ -21,14 +21,14 @@ export const filterByYearAndRole = async (year, role) => {
   return candidatesByRole
 }
 
-export const mapToCandidatesVote = (name, state, year, votes) => ({
+export const mapToCandidatesVote = (name, state, year, {1: first, 2: second = 0}) => ({
   state,
   name,
   year,
   votes: {
-    first: votes[1],
-    second: votes[2],
-    total: votes[1] + votes[2]
+    first,
+    second,
+    total: first + second
   }
 })
 
