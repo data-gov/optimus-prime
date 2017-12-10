@@ -58,4 +58,19 @@ describe('Election service', () => {
     const candidate = await findMostVoteCandidateInYearByState(year, state)
     expect(candidate).toEqual(expected)
   })
+
+  it('should return most voted candidate by state for a specific shift', async () => {
+    ElectionClient.byYear = jest.fn(() => Promise.resolve(testElection))
+    const year = 2006
+    const state = 'ES'
+    const expected = {
+      name: 'LUIZ INACIO LULA DA SILVA',
+      year,
+      state,
+      votes: { first: 953609, second: 1190459, total: 2144068 }
+    }
+
+    const candidate = await findMostVoteCandidateInYearByState(year, state, 2)
+    expect(candidate).toEqual(expected)
+  })
 })

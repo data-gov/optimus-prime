@@ -21,9 +21,12 @@ const findCandidateVotesInAYearByNameAndState = async (name, state, year) => {
 
 const findMostVoteCandidateInYearByState = async (year, state, shift = SHIFT.FIRST) => {
   const candidatesByState = await filterByYearAndStateWithVotesSum(year, state)
+
   const mostVoted = candidatesByState.reduce((mostVoted, candidate) => {
-    return candidate.votes[shift] > mostVoted.votes[shift] ? candidate : mostVoted
+    if (!mostVoted.votes[shift]) { return candidate }
+    return mostVoted.votes[shift] < candidate.votes[shift] ? candidate : mostVoted
   }, candidatesByState[0])
+
   return mapToCandidatesVote(mostVoted.name, state, year, mostVoted.votes)
 }
 
