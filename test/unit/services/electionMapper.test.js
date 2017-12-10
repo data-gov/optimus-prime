@@ -1,5 +1,5 @@
 import { countCandidateVote, mapToCandidatesVote } from '../../../src/services/election/electionServiceMapper'
-import MauroLuisVotes from '../../resources/fixtures/mauro_luis_2014_votes'
+import { votes } from '../../resources/fixtures/mauro_luis_2014_votes'
 
 describe('Election Mapper', () => {
   it('should ignore count if candidate does not have second shift votes', async () => {
@@ -18,9 +18,9 @@ describe('Election Mapper', () => {
       }
     }
 
-    const votesCount = countCandidateVote(MauroLuisVotes.votes, state)
-    const votes = mapToCandidatesVote(name, state, year, votesCount)
+    const votesCount = countCandidateVote(votes, state)
+    const candidateVotes = mapToCandidatesVote(name, state, year, votesCount)
 
-    expect(votes).toEqual(expected)
+    expect(candidateVotes).toEqual(expected)
   })
 })
