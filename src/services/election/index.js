@@ -1,9 +1,11 @@
 import {
-  countCandidateVote,
+  candidateVotesByYear,
   filterByYearAndRole,
   filterByYearAndStateWithVotesSum,
   findCandidateVotesByYearAndName,
-  mapToCandidatesVote
+  mapCandidateVoteForState,
+  mapToCandidatesVote,
+  mostVoted
 } from './electionServiceMapper'
 
 export const SHIFT = { 1: 'first', 2: 'second', 3: 'total' }
@@ -15,7 +17,7 @@ const findCandidatesByRoleAndYear = async (role, year) => {
 
 const findCandidateVotesInAYearByNameAndState = async (name, state, year) => {
   const candidateVotes = await findCandidateVotesByYearAndName(year, name)
-  const votesCount = countCandidateVote(candidateVotes, state)
+  const votesCount = mapCandidateVoteForState(candidateVotes, state)
   return mapToCandidatesVote(name, state, year, votesCount)
 }
 
@@ -26,13 +28,13 @@ const findMostVoteCandidateInYearByState = async (year, state, shiftNumber = 3) 
   return candidatesByState.reduce(mostVoted(shift), candidatesByState[0])
 }
 
-const mostVoted = shift => (mostVoted, candidate) => {
-  if (!mostVoted.votes[shift]) { return candidate }
-  return mostVoted.votes[shift] < candidate.votes[shift] ? candidate : mostVoted
+const findTopVotingStateByCandidateName = async (year, name, shiftNumber = 1) => {
+  return candidateVotesByYear(year, name, shiftNumber)
 }
 
 export const ElectionService = {
   findCandidatesByRoleAndYear,
+  findTopVotingStateByCandidateName,
   findMostVoteCandidateInYearByState,
   findCandidateVotesInAYearByNameAndState
 }

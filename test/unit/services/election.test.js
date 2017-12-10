@@ -1,5 +1,5 @@
 import * as ElectionClient from '../../../src/clients/mongo/election'
-import { ElectionService, SHIFT } from '../../../src/services/election'
+import { ElectionService } from '../../../src/services/election'
 import testElection from '../../resources/fixtures/2006_election'
 import queryResults from '../../resources/fixtures/2014_presidents'
 
@@ -17,7 +17,7 @@ const expectedCadidates = ['MAURO LUÍS IASI',
   'DILMA VANA ROUSSEFF',
   'EDUARDO JORGE MARTINS ALVES SOBRINHO']
 
-const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState } = ElectionService
+const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState, findTopVotingStateByCandidateName } = ElectionService
 
 describe('Election service', () => {
   it('should provide candidates filtered by role and year', async () => {
@@ -67,10 +67,30 @@ describe('Election service', () => {
       name: 'GERALDO JOSÉ RODRIGUES ALCKMIN FILHO',
       state: 'RS',
       votes: { 'first': 3460730, 'second': 3485916, 'total': 6946646 },
-      year: 2006
+      year: 2006,
     }
 
     const candidate = await findMostVoteCandidateInYearByState(year, state, 1)
     expect(candidate).toEqual(expected)
   })
+
+  describe('findTopVotingStateByCandidateName', () => {
+    ElectionClient.byYear = jest.fn(() => Promise.resolve(testElection))
+    const name = 'RUI COSTA PIMENTA'
+    const state = 'SP'
+    const year = 2006
+
+    it('should return state that voted most in a candidate', async () => {
+      const expectedResponse = { name, state, year, votes: { first: 4973, second: 0, total: 4973 } }
+      const votes = await findTopVotingStateByCandidateName(year, name, 1)
+      expect(votes).toEqual(expectedResponse)
+    })
+
+    it('should return undefined if candidate doest participate of second shift', async () => {
+      const expectedResponse = undefined
+      const votes = await findTopVotingStateByCandidateName(year, name, 2)
+      expect(votes).toEqual(expectedResponse)
+    })
+  })
+
 })

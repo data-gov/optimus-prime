@@ -1,4 +1,4 @@
-import { countCandidateVote, mapToCandidatesVote } from '../../../src/services/election/electionServiceMapper'
+import { mapCandidateVoteForState, mapToCandidatesVote } from '../../../src/services/election/electionServiceMapper'
 import { votes } from '../../resources/fixtures/mauro_luis_2014_votes'
 
 describe('Election Mapper', () => {
@@ -18,7 +18,7 @@ describe('Election Mapper', () => {
       }
     }
 
-    const votesCount = countCandidateVote(votes, state)
+    const votesCount = mapCandidateVoteForState(votes, state)
     const candidateVotes = mapToCandidatesVote(name, state, year, votesCount)
 
     expect(candidateVotes).toEqual(expected)

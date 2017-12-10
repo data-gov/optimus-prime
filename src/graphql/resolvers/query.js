@@ -1,26 +1,26 @@
 const FIND_ALL = {}
 
-export const Query = {
-  allCongressmen: async (obj, args, context) => {
-    const { CongressmenService } = context.services
-    const filter = congressmanFilterBuilder(args.filter)
-    return CongressmenService.findAllCongressmen(filter)
-  },
-  candidatesByRoleAndYear: async (obj, args, context) => {
-    const { ElectionService } = context.services
-    const { role, year } = args
-    return ElectionService.findCandidatesByRoleAndYear(role, year)
-  },
-  candidateVotesByState: async (obj, args, context) => {
-    const { ElectionService } = context.services
-    const { name, state, year } = args
-    return ElectionService.findCandidateVotesInAYearByNameAndState(name, state, year)
-  },
-  mostVotedInYearByState: async (obj, args, context) => {
-    const { ElectionService } = context.services
-    const { state, year, shift } = args
-    return ElectionService.findMostVoteCandidateInYearByState(year, state, shift)
-  }
+const allCongressmen = async (obj, { filter }, { services: { CongressmenService } }) =>
+  CongressmenService.findAllCongressmen(filter)
+
+const topVotingState = async (obj, { name, year, shift }, { services: { ElectionService } }) =>
+  ElectionService.findTopVotingStateByCandidateName(year, name, shift)
+
+const candidatesByRoleAndYear = async (obj, { role, year }, { services: { ElectionService } }) =>
+  ElectionService.findCandidatesByRoleAndYear(role, year)
+
+const candidateVotesByState = async (obj, { name, state, year }, { services: { ElectionService } }) =>
+  ElectionService.findCandidateVotesInAYearByNameAndState(name, state, year)
+
+const mostVotedInYearByState = async (obj, { state, year, shift }, { services: { ElectionService } }) =>
+  ElectionService.findMostVoteCandidateInYearByState(year, state, shift)
+
+export const queryResolvers = {
+  allCongressmen,
+  topVotingState,
+  candidateVotesByState,
+  mostVotedInYearByState,
+  candidatesByRoleAndYear
 }
 
 export function congressmanFilterBuilder (filter = {}) {
