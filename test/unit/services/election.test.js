@@ -5,7 +5,8 @@ import queryResults from '../../resources/fixtures/2014_presidents'
 
 jest.mock('../../../src/clients/mongo/election')
 
-const expectedCadidates = ['MAURO LUÍS IASI',
+const expectedCadidates = [
+  'MAURO LUÍS IASI',
   'RUI COSTA PIMENTA',
   'JOSÉ LEVY FIDELIX DA CRUZ',
   'MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA',
@@ -15,7 +16,8 @@ const expectedCadidates = ['MAURO LUÍS IASI',
   'LUCIANA KREBS GENRO',
   'JOSÉ MARIA DE ALMEIDA',
   'DILMA VANA ROUSSEFF',
-  'EDUARDO JORGE MARTINS ALVES SOBRINHO']
+  'EDUARDO JORGE MARTINS ALVES SOBRINHO'
+]
 
 const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState, findTopVotingStateByCandidateName } = ElectionService
 
