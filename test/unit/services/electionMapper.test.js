@@ -1,4 +1,8 @@
-import { mapCandidateVoteForState, mapToCandidatesVote } from '../../../src/services/election/electionServiceMapper'
+import {
+  calculateSecondShiftWinner, mapCandidateVoteForState,
+  mapToCandidatesVote,
+} from '../../../src/services/election/electionServiceMapper'
+import { candidatesVotesMap } from '../../resources/fixtures/calculateSecondShiftWinner'
 import { votes } from '../../resources/fixtures/mauro_luis_2014_votes'
 
 describe('Election Mapper', () => {
@@ -14,13 +18,18 @@ describe('Election Mapper', () => {
       votes: {
         first: 68,
         second: 0,
-        total: 68
-      }
+        total: 68,
+      },
     }
 
     const votesCount = mapCandidateVoteForState(votes, state)
     const candidateVotes = mapToCandidatesVote(name, state, year, votesCount)
 
     expect(candidateVotes).toEqual(expected)
+  })
+
+  it('should calculate second shift winner', () => {
+    const winner = calculateSecondShiftWinner(candidatesVotesMap)
+    expect(winner).toEqual('DILMA VANA ROUSSEFF')
   })
 })

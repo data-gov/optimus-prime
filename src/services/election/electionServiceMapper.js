@@ -1,5 +1,7 @@
 import { byYear, byYearAndRole } from '../../clients/mongo/election'
 
+const BRAZILIAN_STATES = 28
+
 export const findCandidateVotesByYearAndName = async (year, name) => {
   const candidatesByYear = await byYear(year)
   let filteredCandidate = {}
@@ -15,11 +17,9 @@ export const findCandidateVotesByYearAndName = async (year, name) => {
   return filteredCandidate.votes
 }
 
-export const mostVoted = shift => (mostVoted, candidate) => {
-  if (!mostVoted.votes[shift]) {
-    return candidate
-  }
-  return mostVoted.votes[shift] < candidate.votes[shift] ? candidate : mostVoted
+export const mostVoted = shift => (mostVotedCandidate, candidate) => {
+  if (!mostVotedCandidate.votes[shift]) { return candidate }
+  return mostVotedCandidate.votes[shift] < candidate.votes[shift] ? candidate : mostVotedCandidate
 }
 
 export const filterByYearAndRole = async (year, role) => {
@@ -58,14 +58,14 @@ const toCandidateWithStateVotesSum = (role, state, year) => ({ name, votes }) =>
   return { name, role, year, votes: count }
 }
 
-export const mapToCandidatesVote = (name, state, year, { 1: first, 2: second = 0 }) => ({
+export const mapToCandidatesVote = (name, state, year, { total, 1: first, 2: second = 0 }) => ({
   state,
   name,
   year,
   votes: {
     first,
     second,
-    total: first + second
+    total: total || first + second
   }
 })
 
@@ -109,8 +109,43 @@ const candidateVotesByName = (election, name) => {
 }
 
 const topVotingState = (topState, state) => {
-  if (topState.shift !== state.shift) {
-    return topState
-  }
+  if (topState.shift !== state.shift) { return topState }
   return topState.quantity < state.quantity ? state : topState
 }
+
+export const mapAllCandidateVotes = candidates => {
+  const candidateMap = {}
+
+  candidates.forEach(({ name, votes }) => {
+    candidateMap[name] = mapCandidateVotes(votes)
+  })
+
+  return candidateMap
+}
+
+export const calculateSecondShiftWinner = candidateVotesMap => {
+  const results = []
+  const candidateNames = Object.keys(candidateVotesMap)
+
+  candidateNames.forEach(name => {
+    const candidateVotes = candidateVotesMap[name]
+    const total = sumSecondShiftVotes(candidateVotes)
+    results.push({name, total})
+  })
+
+  const winner = results.reduce((a, b) => Math.max(a.total, b.total) < 0 ? a : b)
+  return winner.name
+}
+
+const sumSecondShiftVotes = votes => {
+  let sum = 0
+  const states = Object.keys(votes)
+
+  states.forEach(state => {
+    sum += votes[state][2]
+  })
+
+  return sum
+}
+
+export const bySecondShift = candidate => candidate.votes.length > BRAZILIAN_STATES
