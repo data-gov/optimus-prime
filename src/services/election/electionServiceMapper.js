@@ -115,34 +115,40 @@ const topVotingState = (topState, state) => {
 
 export const mapAllCandidateVotes = candidates => {
   const candidateMap = {}
-
   candidates.forEach(({ name, votes }) => {
     candidateMap[name] = mapCandidateVotes(votes)
   })
-
   return candidateMap
 }
 
-export const calculateSecondShiftWinner = candidateVotesMap => {
-  const results = []
+export const findFirstShiftWinner = candidates => calculateShiftWinner(candidates, 1)
+
+export const findSecondShiftWinner = candidates => {
+  const filteredBySecondShift = candidates.filter(bySecondShift)
+  return calculateShiftWinner(filteredBySecondShift, 2)
+}
+
+export const calculateShiftWinner = (candidates, shift = 2) => {
+  const candidateVotesMap = mapAllCandidateVotes(candidates)
   const candidateNames = Object.keys(candidateVotesMap)
+  const results = []
 
   candidateNames.forEach(name => {
     const candidateVotes = candidateVotesMap[name]
-    const total = sumSecondShiftVotes(candidateVotes)
+    const total = sumShiftVotes(candidateVotes, shift)
     results.push({name, total})
   })
 
-  const winner = results.reduce((a, b) => Math.max(a.total, b.total) < 0 ? a : b)
+  const winner = results.reduce((a, b) => a.total > b.total > 0 ? a : b, {})
   return winner.name
 }
 
-const sumSecondShiftVotes = votes => {
+const sumShiftVotes = (votes, shift) => {
   let sum = 0
   const states = Object.keys(votes)
 
   states.forEach(state => {
-    sum += votes[state][2]
+    sum += votes[state][shift]
   })
 
   return sum
