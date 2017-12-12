@@ -16,10 +16,10 @@ const expectedCadidates = [
   'LUCIANA KREBS GENRO',
   'JOSÉ MARIA DE ALMEIDA',
   'DILMA VANA ROUSSEFF',
-  'EDUARDO JORGE MARTINS ALVES SOBRINHO'
+  'EDUARDO JORGE MARTINS ALVES SOBRINHO',
 ]
 
-const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState, findTopVotingStateByCandidateName } = ElectionService
+const { findCandidatesByRoleAndYear, findCandidateVotesInAYearByNameAndState, findMostVoteCandidateInYearByState, findTopVotingStateByCandidateName, findElectionWinner } = ElectionService
 
 describe('Election service', () => {
   it('should provide candidates filtered by role and year', async () => {
@@ -93,6 +93,12 @@ describe('Election service', () => {
       const votes = await findTopVotingStateByCandidateName(year, name, 2)
       expect(votes).toEqual(expectedResponse)
     })
+  })
+
+  it('should return election winnner', async () => {
+    ElectionClient.byYearAndRole = jest.fn((role, year) => Promise.resolve(queryResults))
+    const electionWinner = await findElectionWinner(2014)
+    expect(electionWinner).toEqual('DILMA VANA ROUSSEFF')
   })
 
 })
