@@ -1,9 +1,12 @@
 import {
-  calculateSecondShiftWinner, mapCandidateVoteForState,
-  mapToCandidatesVote,
+  mapCandidateVoteForState,
+  findSecondShiftWinner,
+  findFirstShiftWinner,
+  mapToCandidatesVote
 } from '../../../src/services/election/electionServiceMapper'
-import { candidatesVotesMap } from '../../resources/fixtures/calculateSecondShiftWinner'
+import candidatesWithoutSecondShift from '../../resources/fixtures/1998_candidates'
 import { votes } from '../../resources/fixtures/mauro_luis_2014_votes'
+import candidatesWithSecondShift from '../../resources/fixtures/2014_candidates'
 
 describe('Election Mapper', () => {
   it('should ignore count if candidate does not have second shift votes', async () => {
@@ -28,8 +31,13 @@ describe('Election Mapper', () => {
     expect(candidateVotes).toEqual(expected)
   })
 
+  it('should calculate first shift winner', () => {
+    const winner = findFirstShiftWinner(candidatesWithoutSecondShift)
+    expect(winner).toEqual('FERNANDO HENRIQUE CARDOSO')
+  })
+
   it('should calculate second shift winner', () => {
-    const winner = calculateSecondShiftWinner(candidatesVotesMap)
+    const winner = findSecondShiftWinner(candidatesWithSecondShift)
     expect(winner).toEqual('DILMA VANA ROUSSEFF')
   })
 })

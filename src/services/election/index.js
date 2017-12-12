@@ -1,9 +1,10 @@
 import {
-  bySecondShift, calculateSecondShiftWinner,
   candidateVotesByYear,
   filterByYearAndRole,
   filterByYearAndStateWithVotesSum,
-  findCandidateVotesByYearAndName, mapAllCandidateVotes,
+  findCandidateVotesByYearAndName,
+  findFirstShiftWinner,
+  findSecondShiftWinner,
   mapCandidateVoteForState,
   mapToCandidatesVote,
   mostVoted
@@ -29,12 +30,10 @@ const findMostVoteCandidateInYearByState = async (year, state, shiftNumber = 3) 
   return candidatesByState.reduce(mostVoted(shift), candidatesByState[0])
 }
 
-const findElectionWinner = async (year) => {
+const findElectionWinner = async year => {
   const candidates = await filterByYearAndRole(year, 'PRESIDENTE')
-  const filteredBySecondShift = candidates.filter(bySecondShift)
-  const candidateVotes = mapAllCandidateVotes(filteredBySecondShift)
-  const secondShiftWinner = calculateSecondShiftWinner(candidateVotes)
-  return secondShiftWinner
+  const secondShiftWinner = findSecondShiftWinner(candidates)
+  return secondShiftWinner || findFirstShiftWinner(candidates)
 }
 
 const findTopVotingStateByCandidateName = async (year, name, shiftNumber = 1) => {
