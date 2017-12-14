@@ -1,14 +1,14 @@
 import { byYear, byYearAndRole } from '../../clients/mongo/election'
+import { remove } from 'diacritics'
 
 const BRAZILIAN_STATES = 28
 
 export const findCandidateVotesByYearAndName = async (year, name) => {
   const candidatesByYear = await byYear(year)
   let filteredCandidate = {}
-
   for (const post of candidatesByYear.post) {
     for (const candidate of post.candidates) {
-      if (candidate.name === name) {
+      if (remove(candidate.name.toUpperCase()) === remove(name.toUpperCase())) {
         filteredCandidate = candidate
       }
     }
