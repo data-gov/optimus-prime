@@ -1,7 +1,7 @@
-# optmus-prime
+# optimus-prime
 [![Build Status](https://travis-ci.org/data-gov/optimus-prime.svg?branch=master)](https://travis-ci.org/data-gov/optimus-prime)
 
-## Rodando optmus-prime localmente
+## Rodando optimus-prime localmente
 
 - git clone git@github.com:data-gov/optimus-prime.git
 - cd optimus-prime
