@@ -1,4 +1,4 @@
-import { queries } from './queries'
-import Election from './election'
+import { queries } from './queries';
+import Election from './election';
 
-export const typeDefs = [queries, Election]
+export const typeDefs = [queries, Election];

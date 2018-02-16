@@ -5,4 +5,4 @@ export const candidateVotes = `
     state: String!
     year: Int!
   }
-`
+`;

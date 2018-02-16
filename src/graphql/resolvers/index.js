@@ -1,3 +1,3 @@
-import { queryResolvers } from './query'
+import { queryResolvers } from './query';
 
-export const resolvers = { Query: queryResolvers }
+export const resolvers = { Query: queryResolvers };

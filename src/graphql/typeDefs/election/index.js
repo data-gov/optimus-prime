@@ -1,4 +1,4 @@
-import { candidateVotes } from './candidateVotes'
-import { votes } from './votes'
+import { candidateVotes } from './candidateVotes';
+import { votes } from './votes';
 
-export default () => [candidateVotes, votes]
+export default () => [candidateVotes, votes];

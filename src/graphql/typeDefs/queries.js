@@ -6,4 +6,4 @@ export const queries = `
     findCandidateVotesInAYearByNameAndState(name: String!, state: String!, year: Int!): CandidateVotes
     electionWinner(year: Int!): String!
   }
-`
+`;

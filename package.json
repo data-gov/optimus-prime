@@ -2,6 +2,10 @@
   "name": "optimus-prime",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.5.1"
+  },
   "scripts": {
     "prestart": "npm run build",
     "start": "DEBUG=optimus-prime:* node ./dist/server.js",
@@ -16,6 +20,7 @@
     "test:watch": "jest --watch --lastCommit --onlyChanged",
     "test:coverage": "jest --coverage",
     "test:update-coverage": "jest --coverage --forceExit",
+    "prettier": "prettier --write 'src/**/*.js'",
     "precommit": "npm run lint:check",
     "prepush": "npm test"
   },
@@ -50,15 +55,15 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.7.1",
-    "eslint-config-standard": "^10.2.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.35.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-graphql": "^1.4.0-1",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
     "jest": "^21.1.0",
     "nodemon": "^1.12.1",
+    "prettier": "^1.10.2",
     "supertest": "^3.0.0"
   },
   "jest": {

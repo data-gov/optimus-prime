@@ -1,3 +1,3 @@
-import { ElectionService } from './election/index'
+import { ElectionService } from './election/index';
 
-export const services = { ElectionService }
+export const services = { ElectionService };

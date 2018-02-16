@@ -4,4 +4,4 @@ export const votes = `
     second: Int!
     total: Int!
   }
-`
+`;

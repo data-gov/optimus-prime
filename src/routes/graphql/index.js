@@ -1,9 +1,9 @@
-import { Router } from 'express'
-import { getGraphqlConfig, getGraphiqlConfig } from '../../config/graphql'
+import { Router } from 'express';
+import { getGraphqlConfig, getGraphiqlConfig } from '../../config/graphql';
 
-const router = Router()
+const router = Router();
 
-router.use('/graphiql', getGraphiqlConfig())
-router.use('/graphql', getGraphqlConfig())
+router.use('/graphiql', getGraphiqlConfig());
+router.use('/graphql', getGraphqlConfig());
 
-export const graphqlRouter = router
+export const graphqlRouter = router;
