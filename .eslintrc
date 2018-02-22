@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "env": {
     "node": true,
     "es6": true,
@@ -7,13 +6,12 @@
     "jest": true
   },
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+    "ecmaVersion": 8
   },
   "rules": {
     "prettier/prettier": "error",
     "no-console": "off"
   },
-  "plugins": ["prettier", "flowtype", "graphql", "promise"],
+  "plugins": ["prettier", "graphql", "promise"],
   "extends": ["plugin:prettier/recommended", "eslint:recommended"]
 }
