@@ -6,10 +6,10 @@
     "npm": "5.5.1"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon ./src/index.js",
-    "lint:check": "eslint ./src/ ./tests/",
-    "lint:fix": "eslint --fix ./src/ ./tests/",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint:check": "eslint src/",
+    "lint:fix": "eslint --fix src/",
     "prettier": "prettier --write 'src/**/*.js'",
     "test": "jest",
     "test:watch": "jest --watch --lastCommit --onlyChanged"

@@ -1,4 +1,4 @@
-export const candidatesVotesMap = {
+exports.candidatesVotesMap = {
   ['AÉCIO NEVES DA CUNHA']: {
     AC: { '1': 116109, '2': 243677 },
     AL: { '1': 311830, '2': 574322 },
