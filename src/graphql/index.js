@@ -8,6 +8,8 @@ const { context } = require('./context');
 
 const isRunningOnProd = process.env.NODE_ENV === 'production';
 
+console.log('typeDefs', typeDefs);
+
 const graphQLServer = new GraphQLServer({
   typeDefs,
   resolvers,
