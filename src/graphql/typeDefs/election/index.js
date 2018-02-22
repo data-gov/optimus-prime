@@ -1,4 +1,4 @@
-import { candidateVotes } from './candidateVotes'
-import { votes } from './votes'
+const { candidateVotes } = require('./candidateVotes');
+const { votes } = require('./votes');
 
-export default () => [candidateVotes, votes]
+module.exports = [candidateVotes, votes];

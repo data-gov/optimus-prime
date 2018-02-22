@@ -1,9 +1,32 @@
-import debug from 'debug'
-import { makeExecutableSchema } from 'graphql-tools'
-import { resolvers } from './resolvers'
-import { typeDefs } from './typeDefs'
-import { OPTIMUS_PRIME_DEBUG } from '../config/constants'
+const { GraphQLServer } = require('graphql-yoga');
+const helmet = require('helmet');
+const logger = require('morgan');
 
-const logger = { log: msg => debug(OPTIMUS_PRIME_DEBUG)(msg) }
+const { resolvers } = require('./resolvers');
+const { typeDefs } = require('./typeDefs');
+const { context } = require('./context');
 
-export const schema = makeExecutableSchema({typeDefs, resolvers, logger})
+const isRunningOnProd = process.env.NODE_ENV === 'production';
+
+const graphQLServer = new GraphQLServer({
+  typeDefs,
+  resolvers,
+  context,
+});
+
+const options = {
+  tracing: !isRunningOnProd,
+  debug: !isRunningOnProd,
+  cacheControl: true,
+};
+
+graphQLServer.express.disable('x-powered-by');
+graphQLServer.express.use(logger('dev'));
+graphQLServer.express.use(helmet());
+
+const startServer = async () => {
+  await graphQLServer.start(options);
+  return graphQLServer;
+};
+
+module.exports = { startServer };

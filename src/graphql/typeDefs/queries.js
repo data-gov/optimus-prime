@@ -1,4 +1,4 @@
-export const queries = `
+const queries = `
   type Query {
     topVotingState(name: String!, year: Int!, shift: Int): CandidateVotes
     candidatesByRoleAndYear(role: String!, year: Int!): [String]!
@@ -6,4 +6,8 @@ export const queries = `
     findCandidateVotesInAYearByNameAndState(name: String!, state: String!, year: Int!): CandidateVotes
     electionWinner(year: Int!): String!
   }
-`
+`;
+
+module.exports = {
+  queries,
+};

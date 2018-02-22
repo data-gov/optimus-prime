@@ -1,28 +1,24 @@
-import debug from 'debug'
-import { Engine } from 'apollo-engine'
-import { getPort, OPTIMUS_PRIME_DEBUG } from './constants'
+const { Engine } = require('apollo-engine');
+const { port } = require('./serverPort');
+const compression = require('compression');
 
-const log = debug(OPTIMUS_PRIME_DEBUG)
-
-export const startApolloEngine = (app) => {
-  const { ENGINE_API_KEY, NODE_ENV } = process.env
-  const port = getPort()
-
-  log(`Starting apollo engine on port ${port}`)
+const startApolloEngine = server => {
+  const { ENGINE_API_KEY, NODE_ENV } = process.env;
 
   if (NODE_ENV === 'production') {
     const engine = new Engine({
-      engineConfig: {
-        apiKey: ENGINE_API_KEY,
-        logging: {
-          level: 'DEBUG'
-        }
-      },
+      engineConfig: { apiKey: ENGINE_API_KEY },
+      endpoint: '/',
       graphqlPort: port,
-      endpoint: '/graphql',
-      dumpTraffic: true
-    })
-    engine.start()
-    app.use(engine.expressMiddleware())
+    });
+
+    engine.start();
+
+    server.express.use(compression());
+    server.express.use(engine.expressMiddleware());
   }
-}
+};
+
+module.exports = {
+  startApolloEngine,
+};

@@ -1,3 +1,7 @@
-import { ElectionService } from './election/index'
+const { ElectionService } = require('./election');
 
-export const services = { ElectionService }
+const services = { ElectionService };
+
+module.exports = {
+  services,
+};

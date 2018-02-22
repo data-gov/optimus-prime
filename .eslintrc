@@ -6,9 +6,14 @@
     "commonjs": true,
     "jest": true
   },
-  "rules": {
-    "semi": [2, "never"]
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
-  "extends": "standard",
-  "plugins": [ "flowtype" ]
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off"
+  },
+  "plugins": ["prettier", "flowtype", "graphql", "promise"],
+  "extends": ["plugin:prettier/recommended", "eslint:recommended"]
 }

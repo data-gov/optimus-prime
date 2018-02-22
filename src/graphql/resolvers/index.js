@@ -1,3 +1,9 @@
-import { queryResolvers } from './query'
+const { queries } = require('./query');
 
-export const resolvers = { Query: queryResolvers }
+const graphQLResolvers = {
+  Query: queries,
+};
+
+module.exports = {
+  resolvers: graphQLResolvers,
+};

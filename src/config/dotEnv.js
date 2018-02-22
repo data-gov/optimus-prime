@@ -1,5 +1,9 @@
-import dotenv from 'dotenv'
+const { config } = require('dotenv');
 
-export async function readDotEnvFile () {
-  dotenv.config()
+async function readDotEnvFile() {
+  config();
 }
+
+module.exports = {
+  readDotEnvFile,
+};

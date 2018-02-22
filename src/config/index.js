@@ -1,7 +1,11 @@
-import { readDotEnvFile } from './dotEnv'
-import { connectMongo } from './mongo'
+const { getMongoConnection } = require('./mongo');
+const { readDotEnvFile } = require('./dotEnv');
 
-export const initConfigurations = async () => {
-  await readDotEnvFile()
-  await connectMongo()
-}
+const initConfigurations = async () => {
+  await readDotEnvFile();
+  await getMongoConnection();
+};
+
+module.exports = {
+  initConfigurations,
+};
