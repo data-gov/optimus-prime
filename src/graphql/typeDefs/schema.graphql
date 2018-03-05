@@ -1,0 +1,3 @@
+# import Query from "query.graphql"
+# import Votes from "votes.graphql"
+# import CandidateVotes from "candidateVotes.graphql"
